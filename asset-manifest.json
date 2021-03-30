@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/root-py%E2%80%8B/static/css/main.91f35fc8.chunk.css",
+    "main.js": "/root-py%E2%80%8B/static/js/main.f597fdea.chunk.js",
+    "main.js.map": "/root-py%E2%80%8B/static/js/main.f597fdea.chunk.js.map",
+    "runtime-main.js": "/root-py%E2%80%8B/static/js/runtime-main.5a913461.js",
+    "runtime-main.js.map": "/root-py%E2%80%8B/static/js/runtime-main.5a913461.js.map",
+    "static/js/2.e2d3133a.chunk.js": "/root-py%E2%80%8B/static/js/2.e2d3133a.chunk.js",
+    "static/js/2.e2d3133a.chunk.js.map": "/root-py%E2%80%8B/static/js/2.e2d3133a.chunk.js.map",
+    "static/js/3.f9b08062.chunk.js": "/root-py%E2%80%8B/static/js/3.f9b08062.chunk.js",
+    "static/js/3.f9b08062.chunk.js.map": "/root-py%E2%80%8B/static/js/3.f9b08062.chunk.js.map",
+    "index.html": "/root-py%E2%80%8B/index.html",
+    "static/css/main.91f35fc8.chunk.css.map": "/root-py%E2%80%8B/static/css/main.91f35fc8.chunk.css.map",
+    "static/js/2.e2d3133a.chunk.js.LICENSE.txt": "/root-py%E2%80%8B/static/js/2.e2d3133a.chunk.js.LICENSE.txt",
+    "static/media/root.62891051.jpg": "/root-py%E2%80%8B/static/media/root.62891051.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.5a913461.js",
+    "static/js/2.e2d3133a.chunk.js",
+    "static/css/main.91f35fc8.chunk.css",
+    "static/js/main.f597fdea.chunk.js"
+  ]
+}
