@@ -1,0 +1,39 @@
+.App-logo {
+    height: 12vmin;
+    pointer-events: none;
+    border-radius: 100%;
+  }
+
+.welc{
+    font-size: 16px;
+    font-family: 'Thasadith', sans-serif;
+  }
+  
+
+
+@media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+      animation: App-logo-spin infinite 20s linear;
+    }
+  }
+
+@keyframes App-logo-spin {
+  0% {
+    transform: scale(.7);
+
+  }
+  25% {
+    transform: scale(1);
+    box-shadow: 0 0 20px #4f9;
+
+  }
+  50% {
+    transform: scale(.7);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 20px #4f9;
+  }
+}
+
+  

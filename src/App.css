@@ -3,51 +3,9 @@
   font-family: 'M PLUS Rounded 1c', sans-serif;
   background-color: #282c34;
   width: 1920px;
-  height: 937px;
+
  
 }
 
-.App-logo {
-  height: 12vmin;
-  pointer-events: none;
-  border-radius: 100%;
-}
 
-.welc{
-  font-size: 16px;
-  font-family: 'Thasadith', sans-serif;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  0% {
-    transform: scale(.7);
-
-  }
-  25% {
-    transform: scale(1);
-    box-shadow: 0 0 20px #4f9;
-
-  }
-  50% {
-    transform: scale(.7);
-  }
-  100% {
-    transform: scale(1);
-    box-shadow: 0 0 20px #4f9;
-  }
-}

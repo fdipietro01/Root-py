@@ -1,0 +1,11 @@
+.App-header {
+    font-size: calc(10px + 2vmin);
+    color: white;
+  }
+
+  .head{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+}

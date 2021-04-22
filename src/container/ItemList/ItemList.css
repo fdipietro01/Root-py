@@ -1,0 +1,14 @@
+.productBox{
+    margin: 10px;
+    width: 500px;
+    
+}
+
+.productListBox{
+   width: 85%; 
+   margin-left: 20px;
+   margin-right: 20px;
+   display: grid;
+   grid-template-columns: 32% 32% 32%;
+   column-gap: 15px;
+}

@@ -13,13 +13,6 @@
     font-size: 30px;
 }
 
-.head{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 20px;
-}
-
 .nBarLi, .nBarIt{
     display: flex;
     align-items: center;
