@@ -5,7 +5,7 @@ import "./Item.css";
 export const Item = ({url, id, name, kind, price,stock})=>{
     return(
         <>
-            <div class="itemBox">
+            <div className="itemBox">
                 <div className="item-card">
                     <div className="img-box"><img className="item-img" src={url} alt="product"/></div>
                     <div className="item-info">
