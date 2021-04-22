@@ -21,9 +21,10 @@
     padding: 4px 8px;
     margin-top: 5px;
     color: white;
-    font-weight: 600;
-    letter-spacing: 2px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
     box-shadow: 2px 3px rgb(16, 77, 17); 
+    font-family: 'Thasadith', sans-serif;
 }
 
 .but:hover, .chart-button:hover{
@@ -31,4 +32,8 @@
     color:  rgb(26, 141, 28); 
 }
 
-
+.contador{
+    font-size: 20px;
+    margin-left: 3px;
+    margin-right:3px;
+}
