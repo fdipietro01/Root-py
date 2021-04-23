@@ -11,9 +11,27 @@
     margin-left: 200px;
     margin-top: 3px;
     margin-bottom: 3px;
+    position: relative;
 }
 .button:hover{
     background: rgba(236, 255, 237, 0.295);
     cursor: pointer;
     text-decoration: underline;
 }
+
+.counter{
+    border: 2px solid black;
+    font-size: 14px;
+    font-weight: 800;
+    border-radius: 100%;
+    padding: 0px 5px;
+    position: absolute;
+    top: -4px;
+    left: 20px;
+    color: black;
+    background-color: rgba(62, 255, 113, 0.747);
+}
+
+/* .counter2 {
+visibility: hidden;
+} */

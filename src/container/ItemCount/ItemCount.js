@@ -25,6 +25,7 @@ export const ItemCount = ({stock})=>{
 
     const onAdd = ()=>{
         setStockOnChart(0);
+
     }
 
     

@@ -7,7 +7,7 @@ import{faTruck} from '@fortawesome/free-solid-svg-icons';
 import{faCreditCard} from '@fortawesome/free-solid-svg-icons';
 import{faCommentDots} from '@fortawesome/free-solid-svg-icons';
 import{faPaperPlane} from '@fortawesome/free-solid-svg-icons';
-import { CartButton } from "../CartWidget/CartWidget";
+import { CartWidget } from "../CartWidget/CartWidget";
 
 
 
@@ -27,7 +27,7 @@ export const NavBar = ()=>{
                 <ul className="nBarIt"><p className= "nBarLink"><FontAwesomeIcon className="icon" icon={faCommentDots}/> Preguntas Frecuentes</p></ul>
                 <ul className="nBarIt"><p className= "nBarLink"><FontAwesomeIcon className="icon" icon={faPaperPlane}/>Contacto</p></ul>
             </li>
-            <CartButton/>
+            <CartWidget/>
         </nav> 
     </>
     );
