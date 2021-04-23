@@ -6,7 +6,10 @@ import Dietes from "./Dietes.jpg";
 import Aljaba from "./Aljaba.jpg";
 import Liquidambar from "./Liquidambar.jpg";
 import Vinca from "./Vinca.jpg";
-import YucaKokedama from "./YucaKokedama.jpg"
+import YucaKokedama from "./YucaKokedama.jpg";
+import Cactus from "./Cactus.jpeg";
+import Tagetes from "./Tagetes.jpg";
+import Aralia from "./Aralia.jpg";
 
 
-export {Hortencia,Cica,BoxusTopiario,Dietes,Aljaba,Liquidambar,Vinca,YucaKokedama,Portulacaraia};
+export {Hortencia,Cica,BoxusTopiario,Dietes,Aljaba,Liquidambar,Vinca,YucaKokedama,Portulacaraia,Cactus,Aralia, Tagetes};

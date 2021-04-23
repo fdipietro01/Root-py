@@ -89,6 +89,36 @@ export const ItemListContainer = () => {
         price: "$1810",
         stock: "2",
       },
+      
+      {
+        url: img.Tagetes,
+        id: "#agc314",
+        name: "Tagetes Patula",
+        kind: "Interior/Exterior",
+        price: "$630",
+        stock: "8",
+      },
+
+      {
+        url: img.Cactus,
+        id: "#agc314",
+        name: "Cactus",
+        kind: "Cactacea",
+        price: "$630",
+        stock: "19",
+      },
+
+      {
+        url: img.Aralia,
+        id: "#agc314",
+        name: "Aralaia",
+        kind: "Arbolacea",
+        price: "$630",
+        stock: "8",
+      },
+
+
+
     ];
 
     const promesa = new Promise((res, rej) => {

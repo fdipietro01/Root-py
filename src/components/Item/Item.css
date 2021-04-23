@@ -4,6 +4,7 @@
     flex-direction: column;
     border-radius: 15px;
     overflow: hidden;
+    width: 430px;
 }
 
 .item-card{
