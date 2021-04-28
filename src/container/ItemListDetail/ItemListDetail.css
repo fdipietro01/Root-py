@@ -1,0 +1,11 @@
+.bodyDetail{
+    background-image: url("../../Assets/bkg.jpg");
+    background-repeat: repeat;
+    height: 80vh;
+}
+
+.productDetailBox{
+    padding-top: 50px;  
+    margin: 0 20%;
+  
+}

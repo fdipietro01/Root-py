@@ -1,6 +1,6 @@
-import "./Link.css";
+import "./Enlace.css";
 
-export const Link = ()=>{
+export const Enlace = ()=>{
     return (
         <>
             <a className="App-link" href="https://github.com/fdipietro01" 
