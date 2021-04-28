@@ -3,13 +3,9 @@
     pointer-events: none;
     border-radius: 100%;
   }
-
-.welc{
-    font-size: 16px;
-    font-family: 'Thasadith', sans-serif;
-  }
-  
-
+.logoCont{
+  margin-top: 10px;
+}
 
 @media (prefers-reduced-motion: no-preference) {
     .App-logo {

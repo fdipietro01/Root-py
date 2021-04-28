@@ -6,7 +6,7 @@ export const ItemDetail = ({url, name, kind, price,description})=>{
         <>
         <div className = "container">
             <div className="itemDetailCard">
-                <div className="image-box"><img className="item-img" src={url} alt="product"/></div>
+                <div className="image-box"><img className="itemDetail-img" src={url} alt="product"/></div>
                 <p className = "plantDetail-name">{name}</p>
             </div>
             <div className="itemDetail-info">                                        

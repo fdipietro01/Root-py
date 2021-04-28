@@ -13,6 +13,12 @@
       font-family: 'Thasadith', sans-serif;
       font-size: 75px;
       padding-top: 5px;
+      color: white;
+      text-decoration: none;
+  }
+
+  .links{
+    text-decoration: none;
   }
 
   .logoCont{
@@ -21,4 +27,16 @@
 .tittleContainer{
   display: flex;
   margin: 0px 50px;
+}
+
+.btn-neon{
+  padding: 15px 30px;
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  transition: 0.5s;
+}
+.btn-neon:hover{
+  box-shadow: 0 0 10px rgba(166, 241, 163, 0.493), 0 0 40px rgba(166, 241, 163, 0.493), 0 0 80px rgba(166, 241, 163, 0.493);
+  transition-delay: .1s;
 }

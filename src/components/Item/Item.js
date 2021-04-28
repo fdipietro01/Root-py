@@ -1,13 +1,15 @@
 import React from "react";
 import { ItemCount } from "../../container/ItemCount/ItemCount";
 import "./Item.css";
+import {Link} from "react-router-dom";
+
 
 export const Item = ({url, name, kind, price,stock})=>{
     return(
         <>
             <div className="itemBox">
                 <div className="item-card">
-                    <div className="img-box"><img className="item-img" src={url} alt="product"/></div>
+                <Link className="linksItems" to={"./item"}><div className="img-box"><img className="item-img" src={url} alt="product"/></div></Link>
                     <div className="item-info">
                         <p className = "plant-name">{name}</p>                    
                         <p className = "plant-kind">{kind}</p>

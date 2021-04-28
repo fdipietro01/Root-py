@@ -22,6 +22,7 @@
     background: radial-gradient(circle, rgb(26, 141, 28), rgba(50, 247, 53, 0.295));
     display: flex;
     justify-content: center;
+    color: white;
 }
 
 .nBarLi{
@@ -51,4 +52,7 @@
     margin-right: 7px;
 }
 
-
+.linksNav{
+    text-decoration: none;
+    color: white;
+}
