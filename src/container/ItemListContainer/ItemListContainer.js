@@ -101,19 +101,19 @@ export const ItemListContainer = () => {
 
       {
         url: img.Cactus,
-        id: "#agc314",
+        id: "#dbd117",
         name: "Cactus",
         kind: "Cactacea",
-        price: "$630",
+        price: "$210",
         stock: "19",
       },
 
       {
         url: img.Aralia,
-        id: "#agc314",
+        id: "#lpm942",
         name: "Aralaia",
         kind: "Arbolacea",
-        price: "$630",
+        price: "$1030",
         stock: "8",
       },
 

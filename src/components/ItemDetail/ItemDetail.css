@@ -1,3 +1,14 @@
+.bodyDetail{
+    background-image: url("../../Assets/bkg.jpg");
+    background-repeat: repeat;
+    height: 80vh;
+}
+
+.productDetailBox{
+    padding-top: 50px;  
+    margin: 0 20%;
+  
+}
 .container{
     background-color: rgb(255, 255, 255);
     display: flex;
@@ -35,6 +46,9 @@
     align-self: flex-start;
 }
 .plantDetail-price{
+    align-self: flex-start;
+}
+.plantDetail-id{
     align-self: flex-start;
 }
 

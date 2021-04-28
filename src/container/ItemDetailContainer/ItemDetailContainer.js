@@ -1,12 +1,14 @@
 import React, {useState, useEffect}from "react";
 import "./ItemDetailContainer.css";
 import * as img from "../../Assets";
-import { ItemListDetail } from "../../container/ItemListDetail/ItemListDetail";
+import { ItemDetail } from "../../components/ItemDetail/ItemDetail";
+import {useParams} from "react-router-dom";
 
 
 export const ItemDetailContainer = ()=>{
     const [arrayItem, setArrayItem] = useState([]);
-    
+    const {id} = useParams();
+
     useEffect(()=>{        
         const itemDet = [{
           url: img.Portulacaraia,
@@ -36,10 +38,12 @@ export const ItemDetailContainer = ()=>{
           });
         } 
     ,[])
-    
+        
+        
+
     return(
         <>
-        {arrayItem.length > 0? <ItemListDetail props = {arrayItem} /> : <h1 className="loading">Cargando...</h1>}
+        {arrayItem.length? <ItemDetail props = {arrayItem} /> : <h1 className="loading">Cargando...</h1>}
             
         </>
     )
