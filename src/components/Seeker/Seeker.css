@@ -1,3 +1,7 @@
+.seekerContainer{
+    display: flex;
+}
+
 .seeker{
     margin-left: 30px;
     width: 800px;
@@ -7,7 +11,21 @@
     font-size: 20px;
 }
 
+.iconSearch{
+    cursor: pointer;
+    font-size: 20px;
+    padding: 9px; 
+    border: 2px solid silver;
+    color: white;
+    background-color: rgba(24, 109, 26, 0.904);
+    display: flex;
+}
+
 .seeker::placeholder{
     font-size: 18px;
-    line-height: 40px;    
+    line-height: 40px;  
+}
+
+.seeker:focus{
+    outline: none;
 }

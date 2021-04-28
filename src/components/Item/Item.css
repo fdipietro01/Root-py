@@ -1,50 +1,45 @@
 .itemBox{
-    background-color: rgba(255, 255, 255, 0.842);
+    background-color: rgb(255, 255, 255);
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     border-radius: 15px;
     overflow: hidden;
-    width: 430px;
+    border: 2px solid rgb(138, 132, 132);
 }
 
 .item-card{
     display: flex;
+    flex-direction: column;
     
 }
 
 .img-box{
-    width: 42%;
     display: flex;
-    border-radius: 15px;
     
-  
+
 }
 
 .item-info{
-    width: 58%;
     display: flex;
     flex-direction: column;
     padding-left: 7px;
     padding-right: 7px;
+    background-color: rgba(166, 241, 163, 0.493);
 }
 
 .item-img{
-    width: 200px;
+    width: 100%;
     height: 230px;
     justify-content: flex-start;
     align-items: flex-start;
     
 }
-.plant-id{
-    align-self: flex-end;
-    margin-right: 10px;
-    font-size: 15px;
-    
-}
+
 .plant-name{
-    font-size: 25px;
+    margin-top: 10px;
+    font-size: 23px;
     font-weight: 800;
-    font-style: italic;
+    
 }
 
 .plant-kind{

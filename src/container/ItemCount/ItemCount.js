@@ -28,10 +28,6 @@ export const ItemCount = ({stock})=>{
 
     }
 
-    
-
-
-
     return (
         <>
             <div className="counter-container">

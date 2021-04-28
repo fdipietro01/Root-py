@@ -6,11 +6,13 @@ export const ItemList = ({props})=>{
 
     return(
         <>  
+        <div className="body">
             <div className="productListBox">
-            {props.map((item)=>
-                    <div className="productBox"> <Item url={item.url} id ={item.id} name={item.name} kind={item.kind} price={item.price} stock={item.stock}/></div>
+                {props.map((item)=>
+                        <div className="productBox"> <Item url={item.url} name={item.name} kind={item.kind} price={item.price} stock={item.stock}/></div>
                 )}
             </div>
+        </div>
         </>
 
     )

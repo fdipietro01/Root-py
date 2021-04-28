@@ -7,7 +7,6 @@ export const Logo = () =>{
         <>
             <div className="logoCont">
                 <img src={roots} className="App-logo" alt="logo" />
-                <p className="welc">Roots Store ©</p>
             </div>
         </>
     )

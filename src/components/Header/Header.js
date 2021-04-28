@@ -9,7 +9,10 @@ export const Header = ()=>{
         <>
             <header className="App-header">
                 <div className="head">
-                    <Logo/>
+                    <div className="tittleContainer">
+                        <h1 className="tittle">ROOTS</h1>
+                        <Logo/>
+                    </div>                    
                     <Seeker />
                 </div>
             <NavBar />

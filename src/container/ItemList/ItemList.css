@@ -1,16 +1,25 @@
 .productBox{
-    margin: 10px;
-    width: 500px;
-    padding: 23px;
-    padding-top: 0;
+    padding-top: 80px;
+    
+}
+
+.body{
+    display: flex;
+    justify-content: center;
+    background-image: url("../../Assets/bkg.jpg");
+    background-repeat: repeat;
     
 }
 
 .productListBox{
+
+   justify-content: center;
    width: 75%; 
-   margin-left: 20px;
-   margin-right: 20px;
    display: grid;
-   grid-template-columns: 32% 32% 32%;
-   column-gap: 25px;
+   grid-template-columns: 250px 250px 250px 250px;
+   column-gap: 80px;
+   margin-top: 80px;
+   padding-bottom: 80px;
+   margin-bottom: 100px;
+   background-color: rgba(197, 197, 197, 0.432);
 }

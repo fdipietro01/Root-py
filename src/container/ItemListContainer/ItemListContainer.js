@@ -139,11 +139,9 @@ export const ItemListContainer = () => {
       });
   }, []);
 
-  console.log(arrayIt);
-  console.log(img);
   return (
     <>
-        <ItemList props = {arrayIt} />
+        {arrayIt.length > 0? <ItemList props = {arrayIt} /> : <h1 className="loading">Cargando...</h1>}
     </>    
     )
 };

@@ -5,7 +5,20 @@
 
   .head{
     display: flex;
-    justify-content: center;
     align-items: center;
-    padding-top: 20px;
+    padding-top: 15px;
+  }
+
+  .tittle{
+      font-family: 'Thasadith', sans-serif;
+      font-size: 75px;
+      padding-top: 5px;
+  }
+
+  .logoCont{
+    margin-left: 20px;    
+  }
+.tittleContainer{
+  display: flex;
+  margin: 0px 50px;
 }
