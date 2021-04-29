@@ -25,10 +25,23 @@ import PlatoRedondo from "./PlatoRedondo.jpg";
 import MensulaL from "./MensulaL.jpg";
 import MensulasCorazon from "./MensulasCorazon.jpg";
 import SoporteBalcon from "./SoporteBalcon.jpg";
+import Menta from "./Menta.jpg";
+import Tomillo from "./Tomillo.jpg";
+import Cilantro from "./Cilantro.jpg";
+import Oregano from "./Oregano.jpg";
+import Ferrillo from "./Ferrillo.jpg";
+import Humus from "./Humus.jpg";
+import Humus2 from "./Humus2.jpg";
+import Guano from "./Guano.jpg";
+import Enraizador from "./Enraizador.jpg";
+
+
+
 
 
 
 
 
 export {Hortencia,Cica,BoxusTopiario,Dietes,Aljaba,Liquidambar,Vinca,YucaKokedama,Portulacaraia,Cactus,Aralia,Tagetes,MacetaCubo,MacetaRegia,MacetaMatri,MacetaBols,
-    MacetaBabilonica,MacetaCuenco,MacetaBudinera,MacetaPiramide,Sustrato, PlatoCuadrado, PlatoRedondo,PlatoJardinero,MensulaL, MensulasCorazon, SoporteBalcon};
+        MacetaBabilonica,MacetaCuenco,MacetaBudinera,MacetaPiramide,Sustrato, PlatoCuadrado, PlatoRedondo,PlatoJardinero,MensulaL, MensulasCorazon, SoporteBalcon,Menta,
+        Oregano, Cilantro,Tomillo,Humus,Humus2,Enraizador,Ferrillo,Guano};

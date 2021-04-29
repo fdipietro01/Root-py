@@ -293,6 +293,96 @@ export const ItemListContainer = () => {
         stock: "17",
       },
 
+      {
+        category: "semillas",
+        url: img.Oregano,
+        id: "3ort299",
+        name: "Sem. Oregano",
+        kind: "Semilas Cultivadas",
+        price: "$110",
+        stock: "37",
+      },
+      
+      {
+        category: "semillas",
+        url: img.Menta,
+        id: "3efm732",
+        name: "Sem. Menta",
+        kind: "Semilas Cultivadas",
+        price: "$130",
+        stock: "26",
+      },
+
+      {
+        category: "semillas",
+        url: img.Cilantro,
+        id:"3ppa902",
+        name: "Sem. Cilantro",
+        kind: "Semilas Cultivadas",
+        price: "$105",
+        stock: "6",
+      },
+
+      {
+        category: "semillas",
+        url: img.Tomillo,
+        id: "pfa710",
+        name: "Sem. Tomillo",
+        kind: "Semillas Cultivadas",
+        price: "$115",
+        stock: "9",
+      },
+
+      {
+        category: "fertilizantes",
+        url: img.Humus,
+        id: "3nic601",
+        name: "Humus Worms 250cm",
+        kind: "Fertilizantes Naturales",
+        price: "$225",
+        stock: "11",
+      },
+
+      {
+        category: "fertilizantes",
+        url: img.Humus2,
+        id: "3gtp267",
+        name: "Humus Worms 1L",
+        kind: "Fertilizantes Naturales",
+        price: "$1095",
+        stock: "6",
+      },
+
+      {
+        category: "fertilizantes",
+        url: img.Ferrillo,
+        id: "3fer888",
+        name: "Fertilizante Ferrillo",
+        kind: "Semillas Cultivadas",
+        price: "$290",
+        stock: "19",
+      },
+
+      {
+        category: "fertilizantes",
+        url: img.Enraizador,
+        id: "3nap776",
+        name: "Enraizador Jap",
+        kind: "Fertilizantes Naturales",
+        price: "$175",
+        stock: "29",
+      },
+
+      {
+        category: "fertilizantes",
+        url: img.Guano,
+        id: "3sap512",
+        name: "Abono de Guano",
+        kind: "Fertilizantes Naturales",
+        price: "$310",
+        stock: "13",
+      },
+
     ];
 
     const promesa = new Promise((res, rej) => {
