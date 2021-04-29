@@ -11,7 +11,7 @@ export const ItemListContainer = () => {
     const productos = [
       {
         url: img.Portulacaraia,
-        id: "#fjk221",
+        id: "3fjk221",
         name: "Portulacaraia",
         kind: "Suculenta",
         price: "$270",
@@ -20,7 +20,7 @@ export const ItemListContainer = () => {
 
       {
         url: img.Aljaba,
-        id: "#pew890",
+        id: "3pew890",
         name: "Aljaba",
         kind: "Exterior",
         price: "$350",
@@ -29,7 +29,7 @@ export const ItemListContainer = () => {
 
       {
         url: img.BoxusTopiario,
-        id: "#ñlr233",
+        id: "3ñlr233",
         name: "Boxus-Topiario",
         kind: "Arbusto",
         price: "$1200",
@@ -38,7 +38,7 @@ export const ItemListContainer = () => {
 
       {
         url: img.Vinca,
-        id: "#wrf762",
+        id: "3wrf762",
         name: "Vinca Apocynaceae",
         kind: "Exterior",
         price: "$150",
@@ -47,7 +47,7 @@ export const ItemListContainer = () => {
 
       {
         url: img.Cica,
-        id: "#wps961",
+        id: "3wps961",
         name: "Cica Revoluta",
         kind: "Interior",
         price: "$850",
@@ -56,7 +56,7 @@ export const ItemListContainer = () => {
 
       {
         url: img.Hortencia,
-        id: "#añw152",
+        id: "3añw152",
         name: "Hortencia",
         kind: "Interior",
         price: "$770",
@@ -65,7 +65,7 @@ export const ItemListContainer = () => {
 
       {
         url: img.YucaKokedama,
-        id: "#ygb453",
+        id: "3ygb453",
         name: "Yuca-Kokedama",
         kind: "Arbusto",
         price: "$440",
@@ -74,7 +74,7 @@ export const ItemListContainer = () => {
 
       {
         url: img.Dietes,
-        id: "#try881",
+        id: "3try881",
         name: "Dietes",
         kind: "Perenne",
         price: "$630",
@@ -83,7 +83,7 @@ export const ItemListContainer = () => {
 
       {
         url: img.Liquidambar,
-        id: "#rjc233",
+        id: "3rjc233",
         name: "Liquidambar",
         kind: "Arbolaceo",
         price: "$1810",
@@ -92,7 +92,7 @@ export const ItemListContainer = () => {
       
       {
         url: img.Tagetes,
-        id: "#agc314",
+        id: "3agc314",
         name: "Tagetes Patula",
         kind: "Interior/Exterior",
         price: "$630",
@@ -101,7 +101,7 @@ export const ItemListContainer = () => {
 
       {
         url: img.Cactus,
-        id: "#dbd117",
+        id: "3dbd117",
         name: "Cactus",
         kind: "Cactacea",
         price: "$210",
@@ -110,7 +110,7 @@ export const ItemListContainer = () => {
 
       {
         url: img.Aralia,
-        id: "#lpm942",
+        id: "3lpm942",
         name: "Aralaia",
         kind: "Arbolacea",
         price: "$1030",

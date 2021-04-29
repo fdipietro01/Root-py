@@ -26,13 +26,13 @@ export const NavBar = ()=>{
             
             <li className="nBarLi">                    
                 <ul className="nBarIt" onClick={handleSubMenu}><p className= "nBarLink"><FontAwesomeIcon className="icon" icon={faBars}/>Categorías</p><SubMenu classN={className}/></ul>
-                <Link className="linksNav" to={"./"}>
+                <Link className="linksNav" to={"/"}>
                     <ul className="nBarIt"><p className= "nBarLink"><FontAwesomeIcon className="icon" icon={faTruck}/>Formas de envío</p></ul></Link>
-                <Link className="linksNav" to={"./"}>
+                <Link className="linksNav" to={"/"}>
                     <ul className="nBarIt"><p className= "nBarLink"><FontAwesomeIcon className="icon" icon={faMapMarkerAlt}/>Nuestro Local</p></ul></Link>
-                <Link className="linksNav" to={"./"}>
+                <Link className="linksNav" to={"/"}>
                     <ul className="nBarIt"><p className= "nBarLink"><FontAwesomeIcon className="icon" icon={faCommentDots}/> Preguntas Frecuentes</p></ul></Link>
-                <Link className="linksNav" to={"./"}>
+                <Link className="linksNav" to={"/"}>
                     <ul className="nBarIt"><p className= "nBarLink"><FontAwesomeIcon className="icon" icon={faPaperPlane}/>Contacto</p></ul></Link>
             </li>
             <CartWidget/>

@@ -4,8 +4,7 @@ import { Enlace } from "./components/Enlace/Enlace";
 import { NavBar } from "./components/NavBar/NavBar";
 import {ItemListContainer} from "./container/ItemListContainer/ItemListContainer";
 import {ItemDetailContainer} from "./container/ItemDetailContainer/ItemDetailContainer";
-import {ItemDetail} from "./components/ItemDetail/ItemDetail";
-import {BrowserRouter as Router, Switch, Route, Link} from "react-router-dom"; 
+import {BrowserRouter as Router, Switch, Route} from "react-router-dom"; 
 
 
 function App() {
@@ -15,9 +14,14 @@ function App() {
     <Header/>
     <NavBar />
     <Switch>
+          <Route path="/category/">  
+                <ItemListContainer/> 
+           </Route>
+
           <Route path="/item/:id">
                 <ItemDetailContainer/>      
-          </Route> 
+          </Route>
+
           <Route path="/">
                 <ItemListContainer/>
           </Route>

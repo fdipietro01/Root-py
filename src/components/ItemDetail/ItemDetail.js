@@ -3,6 +3,7 @@ import "./ItemDetail.css";
 
 
 export const ItemDetail = ({props})=>{
+    console.log(props)
     return(
         <>
         <div className="bodyDetail">

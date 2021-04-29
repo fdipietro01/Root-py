@@ -32,3 +32,8 @@
     background: rgba(24, 146, 30, 0.514);
     cursor: pointer;
 }
+
+.subMenuLink{
+    text-decoration: none;
+    color: white;
+}
