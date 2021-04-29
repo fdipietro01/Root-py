@@ -3,21 +3,20 @@ import "./ItemDetail.css";
 
 
 export const ItemDetail = ({props})=>{
-    console.log(props)
     return(
         <>
         <div className="bodyDetail">
             <div className="productDetailBox">
                 <div className = "container">
                     <div className="itemDetailCard">
-                        <div className="image-box"><img className="itemDetail-img" src={props[0].url} alt="product"/></div>
-                        <p className = "plantDetail-name">{props[0].name}</p>
+                        <div className="image-box"><img className="itemDetail-img" src={props.url} alt="product"/></div>
+                        <p className = "plantDetail-name">{props.name}</p>
                     </div>
                     <div className="itemDetail-info">                                        
-                        <p className = "plantDetail-kind">Tipo/Especie: {props[0].kind}</p>
-                        <p className = "plantDetail-price">Precio: {props[0].price}</p>   
-                        <p className = "plantDetail-id">Id: {props[0].id}</p>
-                        <div className="plantDescription">{props[0].description}</div>                           
+                        <p className = "plantDetail-kind">Tipo/Especie: {props.kind}</p>
+                        <p className = "plantDetail-price">Precio: {props.price}</p>   
+                        <p className = "plantDetail-id">Id: {props.id}</p>
+                        <div className="plantDescription">{props.description}</div>                           
                     </div>
                 </div> 
             </div>

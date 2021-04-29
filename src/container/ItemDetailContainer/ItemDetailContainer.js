@@ -8,7 +8,6 @@ import {useParams} from "react-router-dom";
 export const ItemDetailContainer = ()=>{
     const [arrayItem, setArrayItem] = useState([]);
     const {id} = useParams();
-    console.log(`${id}`);
 
     useEffect(()=>{        
         const itemDet = [{
@@ -140,20 +139,196 @@ export const ItemDetailContainer = ()=>{
           stock: "8",
           description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dapibus placerat iaculis. Duis consequat odio nisl, at porttitor enim molestie vel. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin venenatis dui vitae arcu vehicula hendrerit. Nullam scelerisque tincidunt orci, quis gravida nisl. Quisque feugiat vel nisl molestie condimentum. Sed eleifend tellus vitae eleifend dapibus. Fusce feugiat sed risus vitae auctor. Suspendisse potenti. Pellentesque vel malesuada nisi. Sed metus enim, bibendum sit amet mollis sit amet, dignissim quis nibh. Nam id dapibus justo. In hac habitasse platea dictumst.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque consectetur, leo ut dapibus maximus, sem lacus auctor arcu, a blandit nibh sem vel velit. Proin et auctor sapien. Aenean maximus ut ex ut bibendum. In tincidunt nec nulla a dignissim. Nam at tellus eu tellus feugiat maximus sed non tortor. Aliquam erat volutpat. Ut augue metus, ullamcorper at condimentum a, bibendum ornare dui. Nunc a consectetur justo. Etiam pulvinar sodales placerat. Nulla at diam ac dui tincidunt lobortis. Sed commodo, erat et varius commodo, dui mi posuere diam, ut rutrum nisi ipsum eget tellus. Duis dolor urna, sodales vel euismod vitae, venenatis a mauris. Pellentesque egestas augue a lorem finibus, at condimentum arcu tempus. Curabitur quis sollicitudin tortor, at interdum nisl.",  
 
-        }     
+        },     
+
+        {
+          category: "macetas",
+          url: img.MacetaCubo,
+          id: "3tri438",
+          name: "Maceta Cubo",
+          kind: "Rigida",
+          price: "$875",
+          stock: "23",
+          description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dapibus placerat iaculis. Duis consequat odio nisl, at porttitor enim molestie vel. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin venenatis dui vitae arcu vehicula hendrerit. Nullam scelerisque tincidunt orci, quis gravida nisl. Quisque feugiat vel nisl molestie condimentum. Sed eleifend tellus vitae eleifend dapibus. Fusce feugiat sed risus vitae auctor. Suspendisse potenti. Pellentesque vel malesuada nisi. Sed metus enim, bibendum sit amet mollis sit amet, dignissim quis nibh. Nam id dapibus justo. In hac habitasse platea dictumst.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque consectetur, leo ut dapibus maximus, sem lacus auctor arcu, a blandit nibh sem vel velit. Proin et auctor sapien. Aenean maximus ut ex ut bibendum. In tincidunt nec nulla a dignissim. Nam at tellus eu tellus feugiat maximus sed non tortor. Aliquam erat volutpat. Ut augue metus, ullamcorper at condimentum a, bibendum ornare dui. Nunc a consectetur justo. Etiam pulvinar sodales placerat. Nulla at diam ac dui tincidunt lobortis. Sed commodo, erat et varius commodo, dui mi posuere diam, ut rutrum nisi ipsum eget tellus. Duis dolor urna, sodales vel euismod vitae, venenatis a mauris. Pellentesque egestas augue a lorem finibus, at condimentum arcu tempus. Curabitur quis sollicitudin tortor, at interdum nisl.",  
+        },
+  
+        {
+          category: "macetas",
+          url: img.MacetaMatri,
+          id: "3jor556",
+          name: "Maceta Matri",
+          kind: "Rígida",
+          price: "$1120",
+          stock: "25",
+          description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dapibus placerat iaculis. Duis consequat odio nisl, at porttitor enim molestie vel. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin venenatis dui vitae arcu vehicula hendrerit. Nullam scelerisque tincidunt orci, quis gravida nisl. Quisque feugiat vel nisl molestie condimentum. Sed eleifend tellus vitae eleifend dapibus. Fusce feugiat sed risus vitae auctor. Suspendisse potenti. Pellentesque vel malesuada nisi. Sed metus enim, bibendum sit amet mollis sit amet, dignissim quis nibh. Nam id dapibus justo. In hac habitasse platea dictumst.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque consectetur, leo ut dapibus maximus, sem lacus auctor arcu, a blandit nibh sem vel velit. Proin et auctor sapien. Aenean maximus ut ex ut bibendum. In tincidunt nec nulla a dignissim. Nam at tellus eu tellus feugiat maximus sed non tortor. Aliquam erat volutpat. Ut augue metus, ullamcorper at condimentum a, bibendum ornare dui. Nunc a consectetur justo. Etiam pulvinar sodales placerat. Nulla at diam ac dui tincidunt lobortis. Sed commodo, erat et varius commodo, dui mi posuere diam, ut rutrum nisi ipsum eget tellus. Duis dolor urna, sodales vel euismod vitae, venenatis a mauris. Pellentesque egestas augue a lorem finibus, at condimentum arcu tempus. Curabitur quis sollicitudin tortor, at interdum nisl.",  
+        },
+  
+        {
+          category: "macetas",
+          url: img.MacetaBols,
+          id: "3eti821",
+          name: "Maceta Bols",
+          kind: "Rígida",
+          price: "$250",
+          stock: "38",
+          description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dapibus placerat iaculis. Duis consequat odio nisl, at porttitor enim molestie vel. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin venenatis dui vitae arcu vehicula hendrerit. Nullam scelerisque tincidunt orci, quis gravida nisl. Quisque feugiat vel nisl molestie condimentum. Sed eleifend tellus vitae eleifend dapibus. Fusce feugiat sed risus vitae auctor. Suspendisse potenti. Pellentesque vel malesuada nisi. Sed metus enim, bibendum sit amet mollis sit amet, dignissim quis nibh. Nam id dapibus justo. In hac habitasse platea dictumst.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque consectetur, leo ut dapibus maximus, sem lacus auctor arcu, a blandit nibh sem vel velit. Proin et auctor sapien. Aenean maximus ut ex ut bibendum. In tincidunt nec nulla a dignissim. Nam at tellus eu tellus feugiat maximus sed non tortor. Aliquam erat volutpat. Ut augue metus, ullamcorper at condimentum a, bibendum ornare dui. Nunc a consectetur justo. Etiam pulvinar sodales placerat. Nulla at diam ac dui tincidunt lobortis. Sed commodo, erat et varius commodo, dui mi posuere diam, ut rutrum nisi ipsum eget tellus. Duis dolor urna, sodales vel euismod vitae, venenatis a mauris. Pellentesque egestas augue a lorem finibus, at condimentum arcu tempus. Curabitur quis sollicitudin tortor, at interdum nisl.",  
+        },
+  
+        {
+          category: "macetas",
+          url: img.MacetaBabilonica,
+          id: "3brb698",
+          name: "Maceta Babilónica",
+          kind: "Rígida",
+          price: "$540",
+          stock: "13",
+          description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dapibus placerat iaculis. Duis consequat odio nisl, at porttitor enim molestie vel. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin venenatis dui vitae arcu vehicula hendrerit. Nullam scelerisque tincidunt orci, quis gravida nisl. Quisque feugiat vel nisl molestie condimentum. Sed eleifend tellus vitae eleifend dapibus. Fusce feugiat sed risus vitae auctor. Suspendisse potenti. Pellentesque vel malesuada nisi. Sed metus enim, bibendum sit amet mollis sit amet, dignissim quis nibh. Nam id dapibus justo. In hac habitasse platea dictumst.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque consectetur, leo ut dapibus maximus, sem lacus auctor arcu, a blandit nibh sem vel velit. Proin et auctor sapien. Aenean maximus ut ex ut bibendum. In tincidunt nec nulla a dignissim. Nam at tellus eu tellus feugiat maximus sed non tortor. Aliquam erat volutpat. Ut augue metus, ullamcorper at condimentum a, bibendum ornare dui. Nunc a consectetur justo. Etiam pulvinar sodales placerat. Nulla at diam ac dui tincidunt lobortis. Sed commodo, erat et varius commodo, dui mi posuere diam, ut rutrum nisi ipsum eget tellus. Duis dolor urna, sodales vel euismod vitae, venenatis a mauris. Pellentesque egestas augue a lorem finibus, at condimentum arcu tempus. Curabitur quis sollicitudin tortor, at interdum nisl.",  
+        },
+  
+        {
+          category: "macetas",
+          url: img.MacetaPiramide,
+          id: "3inc767",
+          name: "Maceta Pirámide",
+          kind: "Rígida",
+          price: "$900",
+          stock: "9",
+          description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dapibus placerat iaculis. Duis consequat odio nisl, at porttitor enim molestie vel. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin venenatis dui vitae arcu vehicula hendrerit. Nullam scelerisque tincidunt orci, quis gravida nisl. Quisque feugiat vel nisl molestie condimentum. Sed eleifend tellus vitae eleifend dapibus. Fusce feugiat sed risus vitae auctor. Suspendisse potenti. Pellentesque vel malesuada nisi. Sed metus enim, bibendum sit amet mollis sit amet, dignissim quis nibh. Nam id dapibus justo. In hac habitasse platea dictumst.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque consectetur, leo ut dapibus maximus, sem lacus auctor arcu, a blandit nibh sem vel velit. Proin et auctor sapien. Aenean maximus ut ex ut bibendum. In tincidunt nec nulla a dignissim. Nam at tellus eu tellus feugiat maximus sed non tortor. Aliquam erat volutpat. Ut augue metus, ullamcorper at condimentum a, bibendum ornare dui. Nunc a consectetur justo. Etiam pulvinar sodales placerat. Nulla at diam ac dui tincidunt lobortis. Sed commodo, erat et varius commodo, dui mi posuere diam, ut rutrum nisi ipsum eget tellus. Duis dolor urna, sodales vel euismod vitae, venenatis a mauris. Pellentesque egestas augue a lorem finibus, at condimentum arcu tempus. Curabitur quis sollicitudin tortor, at interdum nisl.",  
+        },
+  
+        {
+          category: "macetas",
+          url: img.MacetaCuenco,
+          id: "3ini923",
+          name: "Maceta Cuenco",
+          kind: "Rígida",
+          price: "$190",
+          stock: "35",
+          description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dapibus placerat iaculis. Duis consequat odio nisl, at porttitor enim molestie vel. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin venenatis dui vitae arcu vehicula hendrerit. Nullam scelerisque tincidunt orci, quis gravida nisl. Quisque feugiat vel nisl molestie condimentum. Sed eleifend tellus vitae eleifend dapibus. Fusce feugiat sed risus vitae auctor. Suspendisse potenti. Pellentesque vel malesuada nisi. Sed metus enim, bibendum sit amet mollis sit amet, dignissim quis nibh. Nam id dapibus justo. In hac habitasse platea dictumst.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque consectetur, leo ut dapibus maximus, sem lacus auctor arcu, a blandit nibh sem vel velit. Proin et auctor sapien. Aenean maximus ut ex ut bibendum. In tincidunt nec nulla a dignissim. Nam at tellus eu tellus feugiat maximus sed non tortor. Aliquam erat volutpat. Ut augue metus, ullamcorper at condimentum a, bibendum ornare dui. Nunc a consectetur justo. Etiam pulvinar sodales placerat. Nulla at diam ac dui tincidunt lobortis. Sed commodo, erat et varius commodo, dui mi posuere diam, ut rutrum nisi ipsum eget tellus. Duis dolor urna, sodales vel euismod vitae, venenatis a mauris. Pellentesque egestas augue a lorem finibus, at condimentum arcu tempus. Curabitur quis sollicitudin tortor, at interdum nisl.",  
+        },
+  
+        {
+          category: "macetas",
+          url: img.MacetaBudinera,
+          id: "3gas345",
+          name: "Maceta Budinera",
+          kind: "Rígida",
+          price: "$425",
+          stock: "31",
+          description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dapibus placerat iaculis. Duis consequat odio nisl, at porttitor enim molestie vel. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin venenatis dui vitae arcu vehicula hendrerit. Nullam scelerisque tincidunt orci, quis gravida nisl. Quisque feugiat vel nisl molestie condimentum. Sed eleifend tellus vitae eleifend dapibus. Fusce feugiat sed risus vitae auctor. Suspendisse potenti. Pellentesque vel malesuada nisi. Sed metus enim, bibendum sit amet mollis sit amet, dignissim quis nibh. Nam id dapibus justo. In hac habitasse platea dictumst.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque consectetur, leo ut dapibus maximus, sem lacus auctor arcu, a blandit nibh sem vel velit. Proin et auctor sapien. Aenean maximus ut ex ut bibendum. In tincidunt nec nulla a dignissim. Nam at tellus eu tellus feugiat maximus sed non tortor. Aliquam erat volutpat. Ut augue metus, ullamcorper at condimentum a, bibendum ornare dui. Nunc a consectetur justo. Etiam pulvinar sodales placerat. Nulla at diam ac dui tincidunt lobortis. Sed commodo, erat et varius commodo, dui mi posuere diam, ut rutrum nisi ipsum eget tellus. Duis dolor urna, sodales vel euismod vitae, venenatis a mauris. Pellentesque egestas augue a lorem finibus, at condimentum arcu tempus. Curabitur quis sollicitudin tortor, at interdum nisl.",  
+        },
+  
+        {
+          category: "macetas",
+          url: img.MacetaRegia,
+          id: "3nzd178",
+          name: "Maceta Regia",
+          kind: "Rígida",
+          price: "$600",
+          stock: "5",      
+          description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dapibus placerat iaculis. Duis consequat odio nisl, at porttitor enim molestie vel. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin venenatis dui vitae arcu vehicula hendrerit. Nullam scelerisque tincidunt orci, quis gravida nisl. Quisque feugiat vel nisl molestie condimentum. Sed eleifend tellus vitae eleifend dapibus. Fusce feugiat sed risus vitae auctor. Suspendisse potenti. Pellentesque vel malesuada nisi. Sed metus enim, bibendum sit amet mollis sit amet, dignissim quis nibh. Nam id dapibus justo. In hac habitasse platea dictumst.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque consectetur, leo ut dapibus maximus, sem lacus auctor arcu, a blandit nibh sem vel velit. Proin et auctor sapien. Aenean maximus ut ex ut bibendum. In tincidunt nec nulla a dignissim. Nam at tellus eu tellus feugiat maximus sed non tortor. Aliquam erat volutpat. Ut augue metus, ullamcorper at condimentum a, bibendum ornare dui. Nunc a consectetur justo. Etiam pulvinar sodales placerat. Nulla at diam ac dui tincidunt lobortis. Sed commodo, erat et varius commodo, dui mi posuere diam, ut rutrum nisi ipsum eget tellus. Duis dolor urna, sodales vel euismod vitae, venenatis a mauris. Pellentesque egestas augue a lorem finibus, at condimentum arcu tempus. Curabitur quis sollicitudin tortor, at interdum nisl.",  
+        },
+  
+        {
+          category: "sustratos",
+          url: img.Sustrato,
+          id: "3fox283",
+          name: "Sustrato Onitas10K",
+          kind: "Rígida",
+          price: "$950",
+          stock: "52",
+          description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dapibus placerat iaculis. Duis consequat odio nisl, at porttitor enim molestie vel. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin venenatis dui vitae arcu vehicula hendrerit. Nullam scelerisque tincidunt orci, quis gravida nisl. Quisque feugiat vel nisl molestie condimentum. Sed eleifend tellus vitae eleifend dapibus. Fusce feugiat sed risus vitae auctor. Suspendisse potenti. Pellentesque vel malesuada nisi. Sed metus enim, bibendum sit amet mollis sit amet, dignissim quis nibh. Nam id dapibus justo. In hac habitasse platea dictumst.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque consectetur, leo ut dapibus maximus, sem lacus auctor arcu, a blandit nibh sem vel velit. Proin et auctor sapien. Aenean maximus ut ex ut bibendum. In tincidunt nec nulla a dignissim. Nam at tellus eu tellus feugiat maximus sed non tortor. Aliquam erat volutpat. Ut augue metus, ullamcorper at condimentum a, bibendum ornare dui. Nunc a consectetur justo. Etiam pulvinar sodales placerat. Nulla at diam ac dui tincidunt lobortis. Sed commodo, erat et varius commodo, dui mi posuere diam, ut rutrum nisi ipsum eget tellus. Duis dolor urna, sodales vel euismod vitae, venenatis a mauris. Pellentesque egestas augue a lorem finibus, at condimentum arcu tempus. Curabitur quis sollicitudin tortor, at interdum nisl.",  
+        },
+  
+        {
+          category: "sustratos",
+          url: img.Sustrato,
+          id: "3qwe127",
+          name: "Sustrato Onitas5K",
+          kind: "Rígida",
+          price: "$500",
+          stock: "45",
+          description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dapibus placerat iaculis. Duis consequat odio nisl, at porttitor enim molestie vel. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin venenatis dui vitae arcu vehicula hendrerit. Nullam scelerisque tincidunt orci, quis gravida nisl. Quisque feugiat vel nisl molestie condimentum. Sed eleifend tellus vitae eleifend dapibus. Fusce feugiat sed risus vitae auctor. Suspendisse potenti. Pellentesque vel malesuada nisi. Sed metus enim, bibendum sit amet mollis sit amet, dignissim quis nibh. Nam id dapibus justo. In hac habitasse platea dictumst.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque consectetur, leo ut dapibus maximus, sem lacus auctor arcu, a blandit nibh sem vel velit. Proin et auctor sapien. Aenean maximus ut ex ut bibendum. In tincidunt nec nulla a dignissim. Nam at tellus eu tellus feugiat maximus sed non tortor. Aliquam erat volutpat. Ut augue metus, ullamcorper at condimentum a, bibendum ornare dui. Nunc a consectetur justo. Etiam pulvinar sodales placerat. Nulla at diam ac dui tincidunt lobortis. Sed commodo, erat et varius commodo, dui mi posuere diam, ut rutrum nisi ipsum eget tellus. Duis dolor urna, sodales vel euismod vitae, venenatis a mauris. Pellentesque egestas augue a lorem finibus, at condimentum arcu tempus. Curabitur quis sollicitudin tortor, at interdum nisl.",  
+        },
+  
+        {
+          category: "otros",
+          url: img.MensulasCorazon,
+          id: "3jnq8819",
+          name: "Ménsula Corazón",
+          kind: "Complemento",
+          price: "$200",
+          stock: "21",
+          description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dapibus placerat iaculis. Duis consequat odio nisl, at porttitor enim molestie vel. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin venenatis dui vitae arcu vehicula hendrerit. Nullam scelerisque tincidunt orci, quis gravida nisl. Quisque feugiat vel nisl molestie condimentum. Sed eleifend tellus vitae eleifend dapibus. Fusce feugiat sed risus vitae auctor. Suspendisse potenti. Pellentesque vel malesuada nisi. Sed metus enim, bibendum sit amet mollis sit amet, dignissim quis nibh. Nam id dapibus justo. In hac habitasse platea dictumst.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque consectetur, leo ut dapibus maximus, sem lacus auctor arcu, a blandit nibh sem vel velit. Proin et auctor sapien. Aenean maximus ut ex ut bibendum. In tincidunt nec nulla a dignissim. Nam at tellus eu tellus feugiat maximus sed non tortor. Aliquam erat volutpat. Ut augue metus, ullamcorper at condimentum a, bibendum ornare dui. Nunc a consectetur justo. Etiam pulvinar sodales placerat. Nulla at diam ac dui tincidunt lobortis. Sed commodo, erat et varius commodo, dui mi posuere diam, ut rutrum nisi ipsum eget tellus. Duis dolor urna, sodales vel euismod vitae, venenatis a mauris. Pellentesque egestas augue a lorem finibus, at condimentum arcu tempus. Curabitur quis sollicitudin tortor, at interdum nisl.",  
+        },
+  
+        {
+          category: "otros",
+          url: img.MensulaL,
+          id: "3lom633",
+          name: "Ménsula en L",
+          kind: "Complemento",
+          price: "$150",
+          stock: "33",
+          description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dapibus placerat iaculis. Duis consequat odio nisl, at porttitor enim molestie vel. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin venenatis dui vitae arcu vehicula hendrerit. Nullam scelerisque tincidunt orci, quis gravida nisl. Quisque feugiat vel nisl molestie condimentum. Sed eleifend tellus vitae eleifend dapibus. Fusce feugiat sed risus vitae auctor. Suspendisse potenti. Pellentesque vel malesuada nisi. Sed metus enim, bibendum sit amet mollis sit amet, dignissim quis nibh. Nam id dapibus justo. In hac habitasse platea dictumst.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque consectetur, leo ut dapibus maximus, sem lacus auctor arcu, a blandit nibh sem vel velit. Proin et auctor sapien. Aenean maximus ut ex ut bibendum. In tincidunt nec nulla a dignissim. Nam at tellus eu tellus feugiat maximus sed non tortor. Aliquam erat volutpat. Ut augue metus, ullamcorper at condimentum a, bibendum ornare dui. Nunc a consectetur justo. Etiam pulvinar sodales placerat. Nulla at diam ac dui tincidunt lobortis. Sed commodo, erat et varius commodo, dui mi posuere diam, ut rutrum nisi ipsum eget tellus. Duis dolor urna, sodales vel euismod vitae, venenatis a mauris. Pellentesque egestas augue a lorem finibus, at condimentum arcu tempus. Curabitur quis sollicitudin tortor, at interdum nisl.",  
+        },
+  
+        {
+          category: "otros",
+          url: img.PlatoRedondo,
+          id: "3nih827",
+          name: "Plato Redondo",
+          kind: "Plato",
+          price: "$280",
+          stock: "65",
+          description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dapibus placerat iaculis. Duis consequat odio nisl, at porttitor enim molestie vel. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin venenatis dui vitae arcu vehicula hendrerit. Nullam scelerisque tincidunt orci, quis gravida nisl. Quisque feugiat vel nisl molestie condimentum. Sed eleifend tellus vitae eleifend dapibus. Fusce feugiat sed risus vitae auctor. Suspendisse potenti. Pellentesque vel malesuada nisi. Sed metus enim, bibendum sit amet mollis sit amet, dignissim quis nibh. Nam id dapibus justo. In hac habitasse platea dictumst.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque consectetur, leo ut dapibus maximus, sem lacus auctor arcu, a blandit nibh sem vel velit. Proin et auctor sapien. Aenean maximus ut ex ut bibendum. In tincidunt nec nulla a dignissim. Nam at tellus eu tellus feugiat maximus sed non tortor. Aliquam erat volutpat. Ut augue metus, ullamcorper at condimentum a, bibendum ornare dui. Nunc a consectetur justo. Etiam pulvinar sodales placerat. Nulla at diam ac dui tincidunt lobortis. Sed commodo, erat et varius commodo, dui mi posuere diam, ut rutrum nisi ipsum eget tellus. Duis dolor urna, sodales vel euismod vitae, venenatis a mauris. Pellentesque egestas augue a lorem finibus, at condimentum arcu tempus. Curabitur quis sollicitudin tortor, at interdum nisl.",  
+        },
+  
+        {
+          category: "otros",
+          url: img.PlatoJardinero,
+          id: "3mcc215",
+          name: "PlatoJardinero",
+          kind: "Platos",
+          price: "$370",
+          stock: "16",
+          description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dapibus placerat iaculis. Duis consequat odio nisl, at porttitor enim molestie vel. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin venenatis dui vitae arcu vehicula hendrerit. Nullam scelerisque tincidunt orci, quis gravida nisl. Quisque feugiat vel nisl molestie condimentum. Sed eleifend tellus vitae eleifend dapibus. Fusce feugiat sed risus vitae auctor. Suspendisse potenti. Pellentesque vel malesuada nisi. Sed metus enim, bibendum sit amet mollis sit amet, dignissim quis nibh. Nam id dapibus justo. In hac habitasse platea dictumst.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque consectetur, leo ut dapibus maximus, sem lacus auctor arcu, a blandit nibh sem vel velit. Proin et auctor sapien. Aenean maximus ut ex ut bibendum. In tincidunt nec nulla a dignissim. Nam at tellus eu tellus feugiat maximus sed non tortor. Aliquam erat volutpat. Ut augue metus, ullamcorper at condimentum a, bibendum ornare dui. Nunc a consectetur justo. Etiam pulvinar sodales placerat. Nulla at diam ac dui tincidunt lobortis. Sed commodo, erat et varius commodo, dui mi posuere diam, ut rutrum nisi ipsum eget tellus. Duis dolor urna, sodales vel euismod vitae, venenatis a mauris. Pellentesque egestas augue a lorem finibus, at condimentum arcu tempus. Curabitur quis sollicitudin tortor, at interdum nisl.",  
+        },
+  
+        {
+          category: "otros",
+          url: img.PlatoCuadrado,
+          id: "3cth515",
+          name: "Plato Cuadrado",
+          kind: "Platos",
+          price: "$315",
+          stock: "22",
+          description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dapibus placerat iaculis. Duis consequat odio nisl, at porttitor enim molestie vel. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin venenatis dui vitae arcu vehicula hendrerit. Nullam scelerisque tincidunt orci, quis gravida nisl. Quisque feugiat vel nisl molestie condimentum. Sed eleifend tellus vitae eleifend dapibus. Fusce feugiat sed risus vitae auctor. Suspendisse potenti. Pellentesque vel malesuada nisi. Sed metus enim, bibendum sit amet mollis sit amet, dignissim quis nibh. Nam id dapibus justo. In hac habitasse platea dictumst.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque consectetur, leo ut dapibus maximus, sem lacus auctor arcu, a blandit nibh sem vel velit. Proin et auctor sapien. Aenean maximus ut ex ut bibendum. In tincidunt nec nulla a dignissim. Nam at tellus eu tellus feugiat maximus sed non tortor. Aliquam erat volutpat. Ut augue metus, ullamcorper at condimentum a, bibendum ornare dui. Nunc a consectetur justo. Etiam pulvinar sodales placerat. Nulla at diam ac dui tincidunt lobortis. Sed commodo, erat et varius commodo, dui mi posuere diam, ut rutrum nisi ipsum eget tellus. Duis dolor urna, sodales vel euismod vitae, venenatis a mauris. Pellentesque egestas augue a lorem finibus, at condimentum arcu tempus. Curabitur quis sollicitudin tortor, at interdum nisl.",  
+        },
+  
+        {
+          category: "otros",
+          url: img.SoporteBalcon,
+          id: "3nya122",
+          name: "Soporte de Balcón",
+          kind: "Complemento",
+          price: "$330",
+          stock: "17",
+          description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dapibus placerat iaculis. Duis consequat odio nisl, at porttitor enim molestie vel. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin venenatis dui vitae arcu vehicula hendrerit. Nullam scelerisque tincidunt orci, quis gravida nisl. Quisque feugiat vel nisl molestie condimentum. Sed eleifend tellus vitae eleifend dapibus. Fusce feugiat sed risus vitae auctor. Suspendisse potenti. Pellentesque vel malesuada nisi. Sed metus enim, bibendum sit amet mollis sit amet, dignissim quis nibh. Nam id dapibus justo. In hac habitasse platea dictumst.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque consectetur, leo ut dapibus maximus, sem lacus auctor arcu, a blandit nibh sem vel velit. Proin et auctor sapien. Aenean maximus ut ex ut bibendum. In tincidunt nec nulla a dignissim. Nam at tellus eu tellus feugiat maximus sed non tortor. Aliquam erat volutpat. Ut augue metus, ullamcorper at condimentum a, bibendum ornare dui. Nunc a consectetur justo. Etiam pulvinar sodales placerat. Nulla at diam ac dui tincidunt lobortis. Sed commodo, erat et varius commodo, dui mi posuere diam, ut rutrum nisi ipsum eget tellus. Duis dolor urna, sodales vel euismod vitae, venenatis a mauris. Pellentesque egestas augue a lorem finibus, at condimentum arcu tempus. Curabitur quis sollicitudin tortor, at interdum nisl.",  
+        },
       ];
     
         const getItems = new Promise((res,rej)=>{
             setTimeout(() => {
                 res(itemDet);
-              }, 2000);
+              }, 1000);
         });
         
         getItems
         .then((res)=>{
             
-        const filtro=res.filter(item=>item.id === `${id}`);
-        setArrayItem(filtro);
+        const itemFilter=res.filter(item=>item.id === id);
+        setArrayItem(itemFilter);
         })
         .catch(() => {
             console.log("No cargó correctamente los datos");
@@ -164,12 +339,10 @@ export const ItemDetailContainer = ()=>{
 
         } 
     ,[id])
-        
-        console.log(arrayItem)
 
     return(
         <>
-        {arrayItem.length? <ItemDetail props = {arrayItem} /> : <h1 className="loading">Cargando...</h1>}   
+        {arrayItem.length? <ItemDetail props = {arrayItem[0]} /> : <h1 className="loading">Cargando...</h1>}   
         </>
     )
 }

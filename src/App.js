@@ -14,7 +14,7 @@ function App() {
     <Header/>
     <NavBar />
     <Switch>
-          <Route path="/category/">  
+          <Route path="/category/:id">  
                 <ItemListContainer/> 
            </Route>
 
