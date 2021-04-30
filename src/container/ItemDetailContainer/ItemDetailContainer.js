@@ -420,7 +420,7 @@ export const ItemDetailContainer = ()=>{
         const getItems = new Promise((res,rej)=>{
             setTimeout(() => {
                 res(itemDet);
-              }, 1000);
+              }, 2000);
         });
         
         getItems

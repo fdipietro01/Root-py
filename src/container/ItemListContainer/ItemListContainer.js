@@ -388,12 +388,11 @@ export const ItemListContainer = () => {
     const promesa = new Promise((res, rej) => {
       setTimeout(() => {
         res(productos);
-      }, 1000);
+      }, 2000);
     });
 
     promesa
       .then((productos) => {
-        console.log(id);
         id !== undefined? setArrayItFilt((productos.filter((item)=>item.category === `${id}`))) : setArrayIt(productos);
       })
       .catch(() => {

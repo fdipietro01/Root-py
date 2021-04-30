@@ -8,24 +8,21 @@ import {Link} from "react-router-dom";
 
 
 export const NavBar = ()=>{
-    const [subMenuActivate, setSubMenuActivate] = useState(false);
-    const [className, setClassname] = useState("desactivate");
+    const [subMenu, setSubMenu] = useState(false);
 
-    useEffect (()=>{
-        setClassname("desactivate")
-    },[])
-    const handleSubMenu = ()=>{
-        setSubMenuActivate(!subMenuActivate);
-        if(subMenuActivate === true) {setClassname("activate")} else {setClassname("desactivate")};  
+   const handleSubMenu = ()=>{
+        setSubMenu(!subMenu);
     }
-
-
+   useEffect (()=>{
+   },[subMenu])
+    
+    
        return (
     <>  
         <nav className="nBar"> 
             
             <li className="nBarLi">                    
-                <ul className="nBarIt" onClick={handleSubMenu}><p className= "nBarLink"><FontAwesomeIcon className="icon" icon={faBars}/>Categorías</p><SubMenu classN={className}/></ul>
+                <ul className="nBarIt" onClick={handleSubMenu}><p className= "nBarLink"><FontAwesomeIcon className="icon" icon={faBars}/>Categorías</p><SubMenu classN={subMenu}/></ul>
                 <Link className="linksNav" to={"/"}>
                     <ul className="nBarIt"><p className= "nBarLink"><FontAwesomeIcon className="icon" icon={faTruck}/>Formas de envío</p></ul></Link>
                 <Link className="linksNav" to={"/"}>
