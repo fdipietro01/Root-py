@@ -402,8 +402,7 @@ export const ItemListContainer = () => {
         console.log("Carga finalizada");
       });
   }, [id]);
-  console.log(arrayIt);
-  console.log(arrayFilt);
+
 
   return (
     <> {id !== undefined? 

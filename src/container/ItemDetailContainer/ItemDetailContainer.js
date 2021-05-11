@@ -441,7 +441,7 @@ export const ItemDetailContainer = ()=>{
 
     return(
         <>
-        {arrayItem.length? <ItemDetail props = {arrayItem[0]} /> : <h1 className="loading">Cargando...</h1>}   
+        {arrayItem.length? <ItemDetail item = {arrayItem[0]} /> : <h1 className="loading">Cargando...</h1>}   
         </>
     )
 }

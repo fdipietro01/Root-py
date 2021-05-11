@@ -1,5 +1,4 @@
 import React from "react";
-import { ItemCount } from "../../container/ItemCount/ItemCount";
 import "./Item.css";
 import {Link} from "react-router-dom";
 
@@ -15,7 +14,8 @@ export const Item = ({id, url, name, kind, price,stock})=>{
                         <p className = "plant-kind">{kind}</p>
                         <div className="shop-card">
                             <p className = "plant-price">{price}</p>
-                            <ItemCount stock={stock}/>
+                            <div className="divisoria"></div>
+                            <Link to={`/item/${id}`} className="linksItems"><button className="chart-button">Ver Producto</button> </Link>
                         </div>    
                     </div>
                 </div>    
