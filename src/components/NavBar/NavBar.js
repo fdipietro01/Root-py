@@ -32,7 +32,7 @@ export const NavBar = ()=>{
                 <Link className="linksNav" to={"/"}>
                     <ul className="nBarIt"><p className= "nBarLink"><FontAwesomeIcon className="icon" icon={faPaperPlane}/>Contacto</p></ul></Link>
             </li>
-            <CartWidget/>
+            <Link to={`/cart`} className="linksNav"><CartWidget/></Link>
         </nav> 
     </>
     );
