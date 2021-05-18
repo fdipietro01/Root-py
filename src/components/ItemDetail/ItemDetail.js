@@ -34,7 +34,7 @@ export const ItemDetail = ({ item }) => {
             </div>
             <div className="itemDetail-info">
               <p className="plantDetail-kind">Tipo/Especie: {item.kind}</p>
-              <p className="plantDetail-price">Precio: {item.price}</p>
+              <p className="plantDetail-price">Precio: ${item.price}</p>
               <p className="plantDetail-id">Id: {item.id}</p>
               <div className="plantDescription">{item.description}</div>
             </div>

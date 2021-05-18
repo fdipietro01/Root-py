@@ -1,12 +1,11 @@
 import React from "react";
 import "./Logo.css"
-import roots from "../../Assets/root.jpg";
 
 export const Logo = () =>{
     return (
         <>
             <div className="logoCont">
-                <img src={roots} className="App-logo" alt="logo" />
+                <img src="https://firebasestorage.googleapis.com/v0/b/roots-stor.appspot.com/o/root.jpg?alt=media&token=c0466596-fb53-4e60-9780-09342494a520" className="App-logo" alt="logo" />
             </div>
         </>
     )

@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, {useEffect, useState} from "react";
 import "./ItemCount.css";
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import{faCaretDown, faCaretUp, faShoppingBasket} from '@fortawesome/free-solid-svg-icons';
@@ -7,8 +7,12 @@ import{faCaretDown, faCaretUp, faShoppingBasket} from '@fortawesome/free-solid-s
 
 export const ItemCount = ({it, helper})=>{
     let [stockOnChart, setStockOnChart] = useState(0);
-    let [stockTotal, setStockTotal] = useState(parseInt(it.stock));
-        
+    let [stockTotal, setStockTotal] = useState(it.stock);
+
+    useEffect(()=>{
+    setStockTotal(it.stock)},[])
+
+    
     const sumar = ()=> { 
         if (!parseInt(stockTotal) <= 0){
             setStockTotal (stockTotal -=1);
@@ -30,7 +34,7 @@ export const ItemCount = ({it, helper})=>{
                     <p className="contador">{stockOnChart}</p>
                     <button onClick={sumar} className="but"><FontAwesomeIcon className="ic" icon={faCaretUp}/></button>
                 </div>
-                <p className="stock">(Stock disponible: {stockTotal})</p>
+                <p className="stock">{`Stock disponible: ${stockTotal}`}</p>
                 <button className="chart-button" onClick={()=>helper(stockOnChart)}><FontAwesomeIcon className="basket" icon={faShoppingBasket}/> Agregar al Carrito</button>
             </div>
 
