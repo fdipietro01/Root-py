@@ -1,4 +1,4 @@
-import React, {useContext, useEffect} from "react";
+import React, {useContext, useEffect, useState} from "react";
 import { CartContext } from "../../context/CartContext"
 import "./Cart.css";
 import { Link } from "react-router-dom";
@@ -7,14 +7,14 @@ import{faTrash} from '@fortawesome/free-solid-svg-icons';
 import{faExternalLinkAlt} from '@fortawesome/free-solid-svg-icons';
 
 export const Cart = () => {
+  const [totalPrice, setTotalPrice] = useState(0)
   const {cart} = useContext(CartContext);
   const {removeIt} = useContext(CartContext);
+
+ useEffect(()=>{
+    cart.length>0? cart.map(x=> setTotalPrice (totalPrice + (x.price*x.quantify))) : setTotalPrice(0)
+ },[cart])
   
-  useEffect(() => {}, [cart]);
-  
-  const deleteItem = (id)=>{
-    removeIt(id)
-  }
 
   return (
     <>
@@ -35,15 +35,16 @@ export const Cart = () => {
               <button  className="trash"><FontAwesomeIcon className="trashIc" icon={faTrash}/> </button>
               <Link className= "trashLink" to={`/item/${x.id}`}><button className="trash"><FontAwesomeIcon className="trashIc" icon={faExternalLinkAlt}/> </button></Link>
               </div>
-            </div>
-            
+            </div>            
           );
         })}
 
-        <div className="endMenu">
-        <Link to={"/"}> <button className="endMenuBut">Volver al catálogo</button></Link>
-          <button className="endMenuBut">Terminar compra</button>
-        </div>
+        {cart.length > 0 && <div> Total: {totalPrice}
+                                <div className="endMenu">
+                                    <Link to={"/"}> <button className="endMenuBut">Volver al catálogo</button></Link>
+                                    <button className="endMenuBut">Terminar compra</button>
+                                </div>
+                            </div>}
       </div>
     </>
   );

@@ -1,12 +1,10 @@
-import React, {useEffect, useState} from "react";
+import React, {useState} from "react";
 
 export const CartContext = React.createContext([]); 
 
 export const CartItems = ({children})=>{
 
     const [cart, setCart] = useState([]);
-
-    useEffect(()=>{console.log(cart)}, [cart])
 
     const addDuplicated = (item, quantify)=> {
         const duplicated = cart.filter(x=> x.id === item.id);
