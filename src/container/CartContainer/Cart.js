@@ -1,50 +1,48 @@
-import React, {useState} from "react";
 import "./Cart.css";
 import {CartContext} from "../../context/CartContext";
-import { useContext, useEffect } from "react";
+import { useContext, useEffect, useState } from "react";
 import {getFirestore} from "../../firebase";
 
 
 export const Cart = ()=>{
 
     const {cart} = useContext(CartContext);
-    const [arrayIt, setArrayIt] = useState([]);
+    const [itemInCart, setItemInCart] = useState([]);
+    const [itemDef, setItemDef] = useState([]);
+    
+    const getItemFromFs = (id, quantify)=>{
+         const db = getFirestore();
+         const itemCollection = db.collection("items");
+         const item =itemCollection.doc(id);
+         item.get()
+         .then((item)=>{
+             item.exists? console.log("existe", item.data()) : console.log("no existe")
+             setItemDef({...item.data(), id:id, quantify:quantify})
+             console.log(itemDef)            
+              })
+              .catch((err)=>console.log("ocurrio un error en la carga del item en cart", err))
+              .finally(()=>console.log("carga en cart exitosa"))
+              return itemDef  
+    }
 
     useEffect(()=>{
-    const db = getFirestore();
-       const itemCollection = db.collection("items");
-       itemCollection.get()
-       .then((lista)=>{
-         lista.size===0 ? console.log("no existe") : console.log(`existe ${lista.size} items`);
-         const listItems = lista.docs.map(x=> {
-           return {id:x.id, ...x.data()} }); 
-         console.log(listItems)
-         setArrayIt(listItems)
-    })
-    .catch((err)=>console.log("ocurrio un error", err))
-    .finally(()=>console.log("carga exitosa"))
-  },[])
+        setItemInCart(cart.map(item=>getItemFromFs(item.id, item.quantify)))
 
-    const filtro = (id)=> arrayIt.filter(x=>x.id === id);
-    const name = (id)=> {const a=filtro(id);
-    return a[0].name}
-    const imag = (id)=> {const a=filtro(id);
-        return a[0].url}
-    const price = (id)=> {const a=filtro(id);
-                    const b=a[0].price.slice(1)
-                    return parseInt(b)}    
+    },[cart])
 
+    
+    
     return(
         <>
             <div className="mainly" >
 
-                {cart.map(x=>{
+                {itemInCart.map(x=>{
                         return  <div key={x.id} className="CartDetailContainer">
-                                    <img className="pict" src={imag(x.id)} alt="img"/>
-                                    <div className="name"> #{x.id}</div>
-                                    <div className="name"> {name(x.id)}</div>
+                                    <img className="pict" src={x.url} alt="img"/>
+                                    <div className="name">{x.name}</div>
+                                    <div className="name"> {x.id}</div>
                                     <div className="cantTot"> X{x.quantify}unidades</div>
-                                    <div className="Tot"> Subotal<span className="TotSpan">${x.quantify*price(x.id)}</span></div>
+                                    <div className="Tot"> Subotal<span className="TotSpan">${x.quantify*x.price}</span></div>
                                     
                                </div>}) }
             </div>

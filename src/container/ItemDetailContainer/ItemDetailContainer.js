@@ -15,7 +15,6 @@ export const ItemDetailContainer = ()=>{
       const item =itemCollection.doc(id);
        item.get()
        .then((item)=>{
-         console.log (item)
          item.exists? console.log("existe", item.data()) : console.log("no existe")
          setItemD({id: item.id, ...item.data()})      
         })
