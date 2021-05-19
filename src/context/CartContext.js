@@ -21,7 +21,7 @@ export const CartItems = ({children})=>{
     const addItem = (item, quantify)=>{
         console.log(item.id)
         console.log(isInCart(item.id))
-        isInCart(item.id)? addDuplicated(item, quantify) : setCart([...cart, {id: item.id, quantify: quantify}]) 
+        isInCart(item.id)? addDuplicated(item, quantify) : setCart([...cart, {...item, id: item.id, quantify: quantify}]) 
     }
     
     const isInCart = (id)=>{
@@ -30,15 +30,15 @@ export const CartItems = ({children})=>{
     return isInCart
     }
 
-    const removeItem = (id)=>{
-        cart.forEach((item,idx)=>{item.itemId === id && setCart(cart.splice(idx,1))})   
+    const removeIt = (id)=>{
+        cart.forEach((item,idx)=>{item.id === id && setCart(cart.splice(idx,1))})   
     }
 
     const clearCart = ()=> setCart([]);
     
 
     return (
-        <CartContext.Provider value={{cart, addDuplicated, addItem, setCart, isInCart, clearCart}}>
+        <CartContext.Provider value={{cart, addDuplicated, addItem, setCart, isInCart, clearCart, removeIt}}>
             {children}
             </CartContext.Provider>
     )      

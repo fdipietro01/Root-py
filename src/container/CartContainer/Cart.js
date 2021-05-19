@@ -1,51 +1,50 @@
+import React, {useContext, useEffect} from "react";
+import { CartContext } from "../../context/CartContext"
 import "./Cart.css";
-import {CartContext} from "../../context/CartContext";
-import { useContext, useEffect, useState } from "react";
-import {getFirestore} from "../../firebase";
+import { Link } from "react-router-dom";
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+import{faTrash} from '@fortawesome/free-solid-svg-icons';
+import{faExternalLinkAlt} from '@fortawesome/free-solid-svg-icons';
 
+export const Cart = () => {
+  const {cart} = useContext(CartContext);
+  const {removeIt} = useContext(CartContext);
+  
+  useEffect(() => {}, [cart]);
+  
+  const deleteItem = (id)=>{
+    removeIt(id)
+  }
 
-export const Cart = ()=>{
-
-    const {cart} = useContext(CartContext);
-    const [itemInCart, setItemInCart] = useState([]);
-    const [itemDef, setItemDef] = useState([]);
-    
-    const getItemFromFs = (id, quantify)=>{
-         const db = getFirestore();
-         const itemCollection = db.collection("items");
-         const item =itemCollection.doc(id);
-         item.get()
-         .then((item)=>{
-             item.exists? console.log("existe", item.data()) : console.log("no existe")
-             setItemDef({...item.data(), id:id, quantify:quantify})
-             console.log(itemDef)            
-              })
-              .catch((err)=>console.log("ocurrio un error en la carga del item en cart", err))
-              .finally(()=>console.log("carga en cart exitosa"))
-              return itemDef  
-    }
-
-    useEffect(()=>{
-        setItemInCart(cart.map(item=>getItemFromFs(item.id, item.quantify)))
-
-    },[cart])
-
-    
-    
-    return(
-        <>
-            <div className="mainly" >
-
-                {itemInCart.map(x=>{
-                        return  <div key={x.id} className="CartDetailContainer">
-                                    <img className="pict" src={x.url} alt="img"/>
-                                    <div className="name">{x.name}</div>
-                                    <div className="name"> {x.id}</div>
-                                    <div className="cantTot"> X{x.quantify}unidades</div>
-                                    <div className="Tot"> Subotal<span className="TotSpan">${x.quantify*x.price}</span></div>
-                                    
-                               </div>}) }
+  return (
+    <>
+      <div className="mainly">
+        {cart.map((x) => {
+          return (
+            <div key={x.id} className="CartDetailContainer">
+              <img className="pict" src={x.url} alt="img" />
+              <div className="name">
+                {x.name} <p className="idd">Id#{x.id}</p>
+              </div>
+              <div className="cantTot"> X{x.quantify} unidades</div>
+              <div className="Tot">
+                {" "}
+                Subotal<span className="TotSpan">${x.quantify * x.price}</span>
+              </div>
+              <div className = "botonera" >
+              <button  className="trash"><FontAwesomeIcon className="trashIc" icon={faTrash}/> </button>
+              <Link className= "trashLink" to={`/item/${x.id}`}><button className="trash"><FontAwesomeIcon className="trashIc" icon={faExternalLinkAlt}/> </button></Link>
+              </div>
             </div>
-        </>
-    )
-}
+            
+          );
+        })}
+
+        <div className="endMenu">
+        <Link to={"/"}> <button className="endMenuBut">Volver al catálogo</button></Link>
+          <button className="endMenuBut">Terminar compra</button>
+        </div>
+      </div>
+    </>
+  );
+};

@@ -11,33 +11,84 @@
 .CartDetailContainer{
     display: flex;
     flex-direction: row;
-    width: 1100px;
+    width: 900px;
     border: 2px solid green;   
-    justify-content: space-around;
+    justify-content: space-between;
     margin-bottom: 20px;
 }
 
 .pict{
-    width: 75px;
-    height: 75px;
+    width: 65px;
+    height: 65px;
     border: 1px solid black;
     border-radius: 100%;
-    margin: 4px 1px;
+    margin: 4px 20px;
      
 }
 
 .name, .cantTot, .Tot{
-    font-size: 28px;
-    grid-column: 3/4;
-    grid: 1/2;
+    font-size: 24px;
     margin: 0;
-    grid-row: 1/2;
     display: flex;
     align-self: center;
+}
+
+.name{
+    flex-direction: column;
 }
 
 .TotSpan{
     margin-left: 5px;
     border-style:groove;
     border: 2px dotted green
+}
+
+.idd{
+    font-size: 14px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.endMenuBut{
+    background-color:  rgb(26, 141, 28);
+    font-size: 19px;
+    padding: 8px 10px;
+    margin-top:2px;
+    margin-right: 100px;
+    color: white;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    font-family: 'Thasadith', sans-serif;
+ }
+ 
+ .endMenuBut:hover{
+    background-color: rgb(26, 112, 28); 
+}
+
+.trash:hover{
+    background-color: rgb(26, 112, 28);
+}
+
+.botonera{
+    display: flex;
+    
+}
+
+.trash {
+    margin: 0;
+    background-color:  rgb(26, 141, 28);
+    font-size: 20px;
+    padding: 8px;
+    margin: 0 5px;
+    height: 60%;
+    align-self: center;
+    color: white;
+}
+
+.trashIc{
+    padding: 0;
+}
+
+.trashLink{
+    align-self: center;
+    color: white;
 }

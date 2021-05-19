@@ -40,7 +40,10 @@ export const ItemDetail = ({ item }) => {
             </div>
           </div>
           <div className="contador2">
-          {itemSelection === undefined? <ItemCount it={item} helper={onAdd}/> : <Link to={`/cart`} className="linksItems"> <button className="chart-button">Terminar mi compra</button> </Link> }
+          {itemSelection === undefined? <ItemCount it={item} helper={onAdd}/> :
+          <><Link to={`/cart`} className="linksItems"> <button className="chart-button">Visitar el carrito</button> </Link>
+          <Link to={"/"}> <button className="chart-button chart-button2">Seguir comprando</button></Link>
+          </> }
           </div>
         </div>
       </div>
