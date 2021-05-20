@@ -6,12 +6,13 @@ import {useContext} from "react";
 
 export const CartWidget = ()=>{
     const {cart} = useContext(CartContext)
+    const {nroItems} = useContext(CartContext)
 
 
     return(
         <>
             <div className="button"> 
-                {cart.length > 0 && <div className="counter">{cart.length}</div>} 
+                {cart.length > 0 && <div className="counter">{nroItems}</div>} 
                 <FontAwesomeIcon className="basket" icon={faShoppingBasket}/> Ir al carrito</div>  
         </>
 

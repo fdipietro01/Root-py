@@ -7,9 +7,13 @@ export const CartItems = ({children})=>{
     
     const [cart, setCart] = useState([]);
     const [total, setTotal] = useState(0);
+    const [nroItems, setNroItems] = useState(0);
 
-    useEffect(()=>{console.log(cart)
-    sumarTotal()},[cart])
+    useEffect(()=>{
+        console.log(cart)
+        sumarTotal()
+        calcNroItems()
+    },[cart])
 
     const addDuplicated = (item, quantify)=> {
         const duplicated = cart.filter(x=> x.id === item.id);
@@ -38,15 +42,20 @@ export const CartItems = ({children})=>{
     const sumarTotal = ()=>{
         let acum = 0
         cart.map(x=> acum = acum + (x.price*x.quantify))
-        console.log(acum)
         setTotal(acum)
     }
 
     const clearCart = ()=> setCart([]);
+
+    const calcNroItems = ()=>{
+        let acum = 0
+        cart.map(x=> acum = acum + (x.quantify))
+        setNroItems(acum)
+    }
     
 
     return (
-        <CartContext.Provider value={{cart, addDuplicated, addItem, setCart, isInCart, clearCart, removeIt, sumarTotal, total}}>
+        <CartContext.Provider value={{cart, addDuplicated, addItem, setCart, isInCart, clearCart, removeIt, total, nroItems}}>
             {children}
             </CartContext.Provider>
     )      
