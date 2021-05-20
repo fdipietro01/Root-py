@@ -1,14 +1,24 @@
+.bodyCart{
+    background-image: url("https://firebasestorage.googleapis.com/v0/b/roots-stor.appspot.com/o/bkg.jpg?alt=media&token=f22a38eb-f745-4663-a4ee-0517b22b6abc");
+    background-repeat: repeat;
+    height: 100vh;
+    padding: 20px 350px;
+}
+
 .mainly{
-    background-color: white;
+    background-image: url("https://firebasestorage.googleapis.com/v0/b/roots-stor.appspot.com/o/45.jpg?alt=media&token=d7070b2c-a2e0-496a-8726-1e67cc651a7e");
+    background-size: cover;
+    background-repeat: no-repeat;
     padding-top: 50px;
-    padding-bottom: 120px;
+    padding-bottom: 80px;
+    border: 2px solid green;
     display: flex;
     flex-direction: column;
     align-items: center;
-
 }
 
 .CartDetailContainer{
+    background-color: white ;
     display: flex;
     flex-direction: row;
     width: 900px;
@@ -91,4 +101,51 @@
 .trashLink{
     align-self: center;
     color: white;
+}
+.bottomBox{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+.cartTotal{
+    width: 230px;
+    font-size: 26px;
+    font-weight: 700;
+    background-color:  white;
+    border-radius: 100px;  
+    align-self: flex-end;
+    border: 2px solid darkgreen;
+}
+
+.aclaracion{
+ font-size: 9px;   
+ align-self: flex-end;
+ margin-bottom: 100px;
+ margin-right: 45px;
+ color: white;
+}
+.emptyCart{
+    background-image: url("https://firebasestorage.googleapis.com/v0/b/roots-stor.appspot.com/o/45.jpg?alt=media&token=d7070b2c-a2e0-496a-8726-1e67cc651a7e");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 2px solid green;
+    width: 100%;
+    height: 35vh;
+}
+
+.emptyCartText2{
+ margin-top: 100px;
+}
+
+.emptyCartText{
+    color: white;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.log{
+    height: 12vmin;
+    pointer-events: none;
+    border-radius: 100%;
+    box-shadow: 0 0 20px #4f9;
 }
