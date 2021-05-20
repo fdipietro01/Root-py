@@ -28,9 +28,7 @@ export const CartItems = ({children})=>{
     }
     
     const isInCart = (id)=>{
-    let isInCart = false;
-    cart.forEach((x)=> {if(x.id === id) isInCart = true}) 
-    return isInCart
+    return cart.some((x)=> x.id === id) 
     }
 
     const removeIt = (id)=>{
