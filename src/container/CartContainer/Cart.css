@@ -133,13 +133,15 @@
 }
 
 .emptyCartText2{
- margin-top: 100px;
+margin-top:20px;
 }
 
 .emptyCartText{
     color: white;
     font-size: 30px;
     font-weight: 700;
+    display: flex;
+    flex-direction: column;
 }
 
 .log{

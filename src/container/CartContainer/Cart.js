@@ -53,7 +53,8 @@ export const Cart = () => {
               <button className="endMenuBut">Terminar compra</button>
             </div>
           </div>
-        ) : <div className="emptyCartText">¿Todavía no encontraste lo que buscabas?
+        ) : <div className="emptyCartText">
+          <p className="emptyCartText2">¿Todavía no encontraste lo que buscabas?</p>
         <p className="emptyCartText2">¡Encontrá lo mejor de nuestro catálogo acá!</p>
         <Link to={"./"} ><div><img src="https://firebasestorage.googleapis.com/v0/b/roots-stor.appspot.com/o/root.jpg?alt=media&token=c0466596-fb53-4e60-9780-09342494a520" className="log" alt="logo" /></div></Link></div>}
       </div>
