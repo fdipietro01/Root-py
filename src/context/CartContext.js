@@ -8,6 +8,7 @@ export const CartItems = ({children})=>{
     const [cart, setCart] = useState([]);
     const [total, setTotal] = useState(0);
     const [nroItems, setNroItems] = useState(0);
+    const [buyer, setBuyer] = useState({});
 
     useEffect(()=>{
         console.log(cart)
@@ -52,10 +53,14 @@ export const CartItems = ({children})=>{
         cart.map(x=> acum = acum + (x.quantify))
         setNroItems(acum)
     }
+
+    const generarOrden = ()=>{
+        const orden = {...buyer, cart, total}
+    }
     
 
     return (
-        <CartContext.Provider value={{cart, addDuplicated, addItem, setCart, isInCart, clearCart, removeIt, total, nroItems}}>
+        <CartContext.Provider value={{cart, addDuplicated, addItem, setCart, isInCart, clearCart, removeIt, total, nroItems, setBuyer, generarOrden}}>
             {children}
             </CartContext.Provider>
     )      
