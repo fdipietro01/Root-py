@@ -8,7 +8,7 @@ export const CartItems = ({children})=>{
     const [cart, setCart] = useState([]);
     const [total, setTotal] = useState(0);
     const [nroItems, setNroItems] = useState(0);
-    const [buyer, setBuyer] = useState({});
+    const [buyer, setBuyer] = useState();
 
     useEffect(()=>{
         console.log(cart)
@@ -55,12 +55,15 @@ export const CartItems = ({children})=>{
     }
 
     const generarOrden = ()=>{
-        const orden = {...buyer, cart, total}
+        if (buyer!==undefined && cart !== undefined){
+        const orden = {buyer, cart, total}
+        console.log (orden)
+        }
     }
     
 
     return (
-        <CartContext.Provider value={{cart, addDuplicated, addItem, setCart, isInCart, clearCart, removeIt, total, nroItems, setBuyer, generarOrden}}>
+        <CartContext.Provider value={{cart, addDuplicated, addItem, setCart, isInCart, clearCart, removeIt, total, nroItems, setBuyer, generarOrden, buyer}}>
             {children}
             </CartContext.Provider>
     )      

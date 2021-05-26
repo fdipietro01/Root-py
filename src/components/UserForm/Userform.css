@@ -1,8 +1,8 @@
 .formField{
     display: flex;
-    padding-bottom: 10px;
+    padding-top: 10px;
     justify-content: flex-end; 
-    width: 100%;
+    width: 80%;
     position: relative;
     
 }
@@ -12,20 +12,25 @@
     flex-direction: column;
     background-color: rgba(255, 255, 255, 0.753) ;
     border: 2px solid green;   
-    padding: 20px;
-    padding-right: 45px;
+    padding: 10px;
+    padding-right: 15px;
     border-top: none;
+    position: relative;
 }
 
 .formContainer{
     margin-left: 50px;
+    flex-wrap: wrap;
     
 }
 
 .input{
     height: 25px;
     border: 2px solid green;
-    width: 70%;  
+}
+
+input:focus{
+    border-color: lightblue;
 }
 
 .label{
@@ -35,8 +40,8 @@
 }
 
 .label2{
-    font-size: 16px;
- line-height: 16px;
+    font-size: 14px;
+ line-height: 14px;
 }
 
 .submitButton{
@@ -49,7 +54,7 @@
     font-family:'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
     letter-spacing: 1px;
     font-weight: 500;
-    margin-top: 10px;
+    margin-top: 30px;
 }
 
 .submitButton:hover{
@@ -69,6 +74,85 @@
 
 .tick{
     position: absolute;
-    top: 3px;
+    top: 15px;
     color: rgb(26, 112, 28); 
+}
+
+.tick2{
+    color:white;
+    font-size: 20px;
+    
+}
+
+.wrong{
+    color: red;
+    font-size: 9px;
+    font-weight: 700;
+    display: block;
+    padding-left:60px ;   
+}
+
+.a{
+    height: 7px;
+}
+
+.w2{
+    margin-right: 30px;
+}
+
+.succes{
+    background-color:   rgba(255, 255, 255, 0.753) ;
+    font-weight: 30px;
+    padding: 20px;
+}
+
+.modalCont{
+    position: relative;
+}
+.modal{
+    position: absolute;
+    border: 2px solid green;
+    background-color: white;
+    color: white;
+    bottom:-50px;
+    left: 40px;
+}
+
+.band{
+    background-color: rgb(26, 141, 28); 
+    color: white;
+    font-family:'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    letter-spacing: 1px;
+    font-weight: 500;
+    font-size: 14px;
+    padding: 2px 5px;
+    
+   
+}
+
+.ror{
+    padding-bottom: 8px;
+    line-height: 20px;
+}
+
+.acceptButton{
+    padding: 5px 10px;
+    background-color: rgb(26, 141, 28); 
+    color: white;
+    font-family:'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    letter-spacing: 1px;
+    font-weight: 500;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    z-index: 2000   ;
+}
+
+.leyend{
+    padding-top: 10px;
+    font-weight: 500;
+}
+
+.regSuc{
+    font-size: 26px;
+    font-weight: 700;
 }

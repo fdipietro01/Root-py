@@ -45,7 +45,7 @@ export const Cart = () => {
           <div className="bottomBox">
             <div className="endMenu">
              <Link to={"/"}> <button className="endMenuBut">Volver al catálogo</button> </Link>
-            <button onClick ={()=>generarOrden} className="endMenuBut">Terminar compra</button>
+            <button onClick ={()=>generarOrden()} className="endMenuBut">Terminar compra</button>
             </div>
           </div>
         </div>
