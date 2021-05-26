@@ -17,7 +17,6 @@ export const ItemListContainer = () => {
        const itemCollection = db.collection("items");
        itemCollection.get()
        .then((lista)=>{
-         lista.size===0 ? console.log("no existe") : console.log(`existen ${lista.size} items`);
          const listItems = lista.docs.map(x=> {
            return {id:x.id, ...x.data()} }); 
          setArrayIt(listItems)
@@ -30,7 +29,6 @@ export const ItemListContainer = () => {
       const itemCollection = db.collection("items").where("category", "==", id);
        itemCollection.get()
        .then((lista)=>{
-         lista.size===0 ? console.log("no existe") : console.log(`existe ${lista.size} items`);
          const listItems = lista.docs.map(x=> {
            return {id:x.id, ...x.data()} }); 
          setArrayItFilt(listItems)

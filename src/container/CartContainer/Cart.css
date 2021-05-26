@@ -24,7 +24,6 @@
     width: 900px;
     border: 2px solid green;   
     justify-content: space-between;
-    margin-bottom: 20px;
 }
 
 .pict{
@@ -72,6 +71,13 @@
  .endMenuBut:hover{
     background-color: rgb(26, 112, 28); 
 }
+.endMenuBut:disabled{
+    background-color: rgba(26, 112, 27, 0.795); 
+    color: rgba(255, 255, 255, 0.644);
+}
+.endMenuBut:disabled:hover{
+    background-color: rgba(26, 112, 27, 0.795); 
+}
 
 .trash:hover{
     background-color: rgb(26, 112, 28);
@@ -114,6 +120,7 @@
     border-radius: 100px;  
     align-self: flex-end;
     border: 2px solid darkgreen;
+    
 }
 
 .aclaracion{
@@ -158,5 +165,29 @@ margin-top:20px;
 
 .topBox{
     display: flex;
+    padding: 0 20px;
 }
 
+.underCartDetail{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.emptyButton{
+    display:flex;
+    justify-content: space-around;
+    background-color: rgb(26, 141, 28); 
+    color: white;
+    font-family:'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    letter-spacing: 1px;
+    font-weight: 500;
+    padding: 10px 5px;
+    width: 130px;
+    height: 40px;
+    line-height: 16px;
+}
+
+.emptyButton:hover{
+    background-color: rgb(26, 112, 28);
+}

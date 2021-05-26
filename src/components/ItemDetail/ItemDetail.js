@@ -16,7 +16,6 @@ export const ItemDetail = ({ item }) => {
     const onAdd = (itemsPorAgregar)=>{
         if (itemsPorAgregar !== 0){
         setItemSelection(itemsPorAgregar)
-        console.log(itemsPorAgregar)
         addItem(item, itemsPorAgregar)
       }
     }    

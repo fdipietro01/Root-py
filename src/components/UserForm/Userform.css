@@ -19,7 +19,7 @@
 }
 
 .formContainer{
-    margin-left: 50px;
+    margin-left: 30px;
     flex-wrap: wrap;
     
 }
@@ -103,7 +103,7 @@ input:focus{
 .succes{
     background-color:   rgba(255, 255, 255, 0.753) ;
     font-weight: 30px;
-    padding: 20px;
+    padding: 10px;
 }
 
 .modalCont{
@@ -144,15 +144,20 @@ input:focus{
     font-weight: 500;
     margin-top: 30px;
     margin-bottom: 10px;
-    z-index: 2000   ;
 }
 
 .leyend{
     padding-top: 10px;
     font-weight: 500;
+    font-size: 16px;
 }
 
 .regSuc{
     font-size: 26px;
     font-weight: 700;
+}
+
+.formContainer2{
+    margin-bottom: 110px;
+    
 }

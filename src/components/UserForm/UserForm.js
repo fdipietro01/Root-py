@@ -99,7 +99,7 @@ export const UserForm = ()=>{
 
     return(
         
-        <div className="formContainer">
+        <div className={`formContainer ${buyer!== undefined && "formContainer2"}`}>
             <p className="logTittle">Registrate para confirmar tu orden</p>
             {buyer === undefined? 
             <>
@@ -185,7 +185,7 @@ export const UserForm = ()=>{
                 <div>
                 <p className="leyend">Para deshacer el registro y hacer uno nuevo para realizar su pedido, seleccione nuevo registro </p>
                 </div>
-                <button  onClick={()=>nuevoRegistro()} className="acceptButton">Nuevo Registro</button>
+                <button onClick={()=>nuevoRegistro()} className="acceptButton">Nuevo Registro</button>
             </div>}
         </div>
        

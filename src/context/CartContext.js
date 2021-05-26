@@ -11,7 +11,6 @@ export const CartItems = ({children})=>{
     const [buyer, setBuyer] = useState();
 
     useEffect(()=>{
-        console.log(cart)
         sumarTotal()
         calcNroItems()
     },[cart])
@@ -27,8 +26,6 @@ export const CartItems = ({children})=>{
     }
 
     const addItem = (item, quantify)=>{
-        console.log(item.id)
-        console.log(isInCart(item.id))
         isInCart(item.id)? addDuplicated(item, quantify) : setCart([...cart, {...item, id: item.id, quantify: quantify}])
     }
     

@@ -9,7 +9,9 @@ import { UserForm } from "../../components/UserForm/UserForm"
 
 export const Cart = () => {
   const { cart } = useContext(CartContext);
+  const { buyer } = useContext(CartContext);
   const { removeIt } = useContext(CartContext);
+  const { clearCart } = useContext(CartContext);
   const { total } = useContext(CartContext);
   const { generarOrden } = useContext(CartContext);
 
@@ -36,8 +38,13 @@ export const Cart = () => {
                                     </div>
                                 );
               })}
-            <div className="cartTotal"> Total: <span className="cartTotalValue">${total}</span></div>
-                <p className="aclaracion">*todos los impuestos agregados</p>
+              <div className="underCartDetail"> 
+                 <button onClick={()=>clearCart()} className="emptyButton"><FontAwesomeIcon className="" icon={faTrash}/>Vaciar Carrito</button>
+                <div>
+                    <p className="cartTotal"> Total: <span className="cartTotalValue">${total}</span></p>
+                    <p className="aclaracion">*todos los impuestos agregados</p>
+                </div>
+              </div> 
             </div>
             {<UserForm/>}
           </div>
@@ -45,7 +52,7 @@ export const Cart = () => {
           <div className="bottomBox">
             <div className="endMenu">
              <Link to={"/"}> <button className="endMenuBut">Volver al catálogo</button> </Link>
-            <button onClick ={()=>generarOrden()} className="endMenuBut">Terminar compra</button>
+            <button disabled={buyer=== undefined} onClick ={()=>generarOrden()} className="endMenuBut">Terminar compra</button>
             </div>
           </div>
         </div>
