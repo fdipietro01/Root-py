@@ -1,4 +1,7 @@
 import React, {useState,useEffect} from "react";
+import {getFirestore} from "../firebase"
+import "firebase/firestore"
+import {date} from "../firebase"
 
 export const CartContext = React.createContext([]); 
 
@@ -9,6 +12,7 @@ export const CartItems = ({children})=>{
     const [total, setTotal] = useState(0);
     const [nroItems, setNroItems] = useState(0);
     const [buyer, setBuyer] = useState();
+    const [orderId, setOrderId] = useState();
 
     useEffect(()=>{
         sumarTotal()
@@ -53,9 +57,16 @@ export const CartItems = ({children})=>{
 
     const generarOrden = ()=>{
         if (buyer!==undefined && cart !== undefined){
-        const orden = {buyer, cart, total}
+        const db = getFirestore();
+        const orderRegistro = db.collection("order")
+        const orden = {...date, buyer, cart, total}
         console.log (orden)
+        orderRegistro.add(orden)
+        .then(({id})=>setOrderId(id))
+        .catch(err=>{console.log(err)})
+        .finally(()=>{console.log(`id generado ${orderId}`)})
         }
+        console.log(orderId)
     }
     
 

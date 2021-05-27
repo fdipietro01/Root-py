@@ -24,6 +24,7 @@
     width: 900px;
     border: 2px solid green;   
     justify-content: space-between;
+    margin-bottom: 10px;
 }
 
 .pict{
@@ -171,7 +172,6 @@ margin-top:20px;
 .underCartDetail{
     display: flex;
     justify-content: space-between;
-    margin-top: 10px;
 }
 
 .emptyButton{
