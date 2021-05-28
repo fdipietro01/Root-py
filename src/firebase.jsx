@@ -13,4 +13,4 @@ const app = firebase.initializeApp({
 
   export const getFirebase = ()=> app
   export const getFirestore =()=> firebase.firestore(app);
-  export const date = {date: firebase.firestore.Timestamp.fromDate(new Date())}
+  export const getDate = () => firebase.firestore.Timestamp.fromDate(new Date())

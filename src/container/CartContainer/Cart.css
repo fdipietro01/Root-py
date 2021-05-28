@@ -132,12 +132,11 @@
  color: white;
 }
 .emptyCart{
-    background-image: url("https://firebasestorage.googleapis.com/v0/b/roots-stor.appspot.com/o/45.jpg?alt=media&token=d7070b2c-a2e0-496a-8726-1e67cc651a7e");
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-image: url("https://firebasestorage.googleapis.com/v0/b/roots-stor.appspot.com/o/3.jpg?alt=media&token=5e1fdf80-29f4-4254-98cc-592b94061670");
+    background-size: contain;
+    background-repeat: repeat;
     border: 2px solid green;
-    width: 100%;
-    height: 35vh;
+    height: 55vh;
 }
 
 .emptyCartText2{

@@ -10,7 +10,7 @@ export const Header = ()=>{
             <header className="App-header">
                 <div className="head">
                     <div className="tittleContainer">
-                        <Link to={"/"} className="links"><h1 className="tittle btn-neon">ROOTS</h1></Link>
+                        <Link to={"/"} className="links"><button className="tittle btn-neon">ROOTS</button></Link>
                         <Logo/>
                     </div>                    
                     <Seeker />

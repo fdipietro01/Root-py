@@ -1,7 +1,7 @@
 import React, {useState,useEffect} from "react";
 import {getFirestore} from "../firebase"
 import "firebase/firestore"
-import {date} from "../firebase"
+import {getDate} from "../firebase"
 
 export const CartContext = React.createContext([]); 
 
@@ -9,6 +9,7 @@ export const CartItems = ({children})=>{
 
     
     const [cart, setCart] = useState([]);
+    const [loading, setLoading] = useState(true);
     const [total, setTotal] = useState(0);
     const [nroItems, setNroItems] = useState(0);
     const [buyer, setBuyer] = useState();
@@ -59,19 +60,20 @@ export const CartItems = ({children})=>{
         if (buyer!==undefined && cart !== undefined){
         const db = getFirestore();
         const orderRegistro = db.collection("order")
-        const orden = {...date, buyer, cart, total}
-        console.log (orden)
+        const orden = {date: getDate(), buyer, cart, total}
         orderRegistro.add(orden)
-        .then(({id})=>setOrderId(id))
+        .then((res)=>{
+            setOrderId(res.id)})
         .catch(err=>{console.log(err)})
-        .finally(()=>{console.log(`id generado ${orderId}`)})
+        .finally(()=>{
+            setLoading(false)})
         }
-        console.log(orderId)
+        setCart([])
     }
     
 
     return (
-        <CartContext.Provider value={{cart, addDuplicated, addItem, setCart, isInCart, clearCart, removeIt, total, nroItems, setBuyer, generarOrden, buyer}}>
+        <CartContext.Provider value={{cart, addDuplicated, addItem, setCart, isInCart, clearCart, removeIt, total, nroItems, setBuyer, generarOrden, buyer, orderId, loading}}>
             {children}
             </CartContext.Provider>
     )      

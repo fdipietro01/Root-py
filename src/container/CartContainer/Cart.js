@@ -52,7 +52,7 @@ export const Cart = () => {
           <div className="bottomBox">
             <div className="endMenu">
              <Link to={"/"}> <button className="endMenuBut">Volver al catálogo</button> </Link>
-            <button disabled={buyer=== undefined} onClick ={()=>generarOrden()} className="endMenuBut">Terminar compra</button>
+             <Link to={"/purchased/"}> <button disabled={buyer=== undefined} onClick ={()=>generarOrden()} className="endMenuBut">Terminar compra</button> </Link>
             </div>
           </div>
         </div>

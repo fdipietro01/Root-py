@@ -8,6 +8,7 @@ import { NotFound } from "./components/NotFound/NotFound"
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { Cart } from "./container/CartContainer/Cart";
 import { CartItems } from "./context/CartContext";
+import { Purchased } from "./components/Purchased/Purchased"
 
 function App() {
   return (
@@ -24,7 +25,10 @@ function App() {
               <ItemDetailContainer />
             </Route>
             <Route path="/cart/">
-              <Cart />
+              <Cart/>
+            </Route>
+            <Route path="/purchased/">
+              <Purchased/>
             </Route>
             <Route path="/">
               <ItemListContainer />
@@ -33,9 +37,9 @@ function App() {
               <NotFound/>
             </Route>
           </Switch>
-          <Enlace />
         </Router>
       </CartItems>
+      <Enlace />  
     </div>
   );
 }

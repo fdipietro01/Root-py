@@ -89,7 +89,6 @@ export const UserForm = ()=>{
         }
         setBuyer({...user})
         } else setErrorReg(true)
-        console.log(buyer)
     }
 
     const nuevoRegistro =()=>{

@@ -19,6 +19,7 @@
 
   .links{
     text-decoration: none;
+    
   }
 
   .logoCont{
@@ -30,11 +31,13 @@
 }
 
 .btn-neon{
+  background-color: #282c34a9;
   padding: 15px 30px;
   position: relative;
   display: inline-block;
   overflow: hidden;
   transition: 0.5s;
+  border:none;
 }
 .btn-neon:hover{
   box-shadow: 0 0 10px rgba(166, 241, 163, 0.493), 0 0 40px rgba(166, 241, 163, 0.493), 0 0 80px rgba(166, 241, 163, 0.493);
