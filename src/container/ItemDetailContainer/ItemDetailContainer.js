@@ -24,7 +24,7 @@ export const ItemDetailContainer = ()=>{
 
     return(
         <>
-        {itemD.exists !==[]? <ItemDetail item = {itemD} /> : 
+        {itemD !==undefined? <ItemDetail item = {itemD} /> : 
         <div className="loader"> 
             <div className="spinner"></div> 
             <h2 className="loading">Cargando...</h2> 

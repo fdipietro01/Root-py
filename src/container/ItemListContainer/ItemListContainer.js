@@ -39,17 +39,18 @@ export const ItemListContainer = () => {
 
 
   return (
-    <> {id !== undefined? 
-          (arrayFilt.length > 0? <ItemList props = {arrayFilt} /> : 
+    <>
+      {id !== undefined? 
+          (arrayFilt.length > 0?  <ItemList props = {arrayFilt}/>: 
           <div className="loader"> 
             <div className="spinner"></div> 
-            <h2 className="loading">Cargando...</h2> 
+            <h2 className="loading"> Cargando...</h2> 
           </div>) : 
-          (arrayIt.length > 0?  <ItemList props = {arrayIt} /> : <div className="loader"> 
-          <div className="spinner"></div> 
-          <h2 className="loading">Cargando...</h2> 
-          </div>)
-        }
-    </>    
+          (arrayIt.length > 0?  <ItemList props = {arrayIt} /> :
+           <div className="loader"> 
+             <div className="spinner"></div> 
+             <h2 className="loading">Cargando...</h2> 
+          </div>)}
+    </>   
     )
 };

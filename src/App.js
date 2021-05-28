@@ -16,7 +16,7 @@ function App() {
       <CartItems value={[]}>
         <Router>
           <Header />
-          <NavBar></NavBar>
+          <NavBar/>
           <Switch>
             <Route path="/category/:id">
               <ItemListContainer />

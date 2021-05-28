@@ -5,7 +5,8 @@ import { Item } from "../Item/Item";
 export const ItemList = ({props})=>{
 
     return(
-        <>  
+        <div className="catalogoCont"> 
+        <p className="catalogo">Nuestro Catalogo</p>
         <div className="body">
             <div className="productListBox">
                 {props.map((item)=>
@@ -13,7 +14,7 @@ export const ItemList = ({props})=>{
                 )}
             </div>
         </div>
-        </>
+        </div>
 
     )
 }

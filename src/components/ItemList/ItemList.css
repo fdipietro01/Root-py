@@ -6,8 +6,7 @@
 .body{
     display: flex;
     justify-content: center;
-    background-image: url("https://firebasestorage.googleapis.com/v0/b/roots-stor.appspot.com/o/bkg.jpg?alt=media&token=f22a38eb-f745-4663-a4ee-0517b22b6abc");
-    background-repeat: repeat;
+ 
     
 }
 
@@ -26,4 +25,18 @@
 
 .linksItems{
     text-decoration: none;
+}
+
+.catalogo{
+    padding-top: 165px;
+    -webkit-text-stroke:2px rgba(0, 0, 0, 0.486);
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+    letter-spacing: 2px;
+    font-size: 60px;
+    width: 75%;
+    height: 300px;
+    margin: auto;
+    background-size: cover;
+    background-image: url("https://firebasestorage.googleapis.com/v0/b/roots-stor.appspot.com/o/aa.jpg?alt=media&token=4de3101c-a98b-44f2-8e10-2c5b1505b771");
 }
