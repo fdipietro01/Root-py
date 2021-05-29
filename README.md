@@ -35,7 +35,7 @@ Finalmente, la App devuelve una constancia o identificador de la orden generada 
 
 ### `Algunos Comentarios`
 - El proyecto no contó con la participación de UI/UX, de manera que todos los estilos y animaciones implementadas fueron una elección propia y desarrolladas con Css nativo, sin el uso preprocesadores de estilos. Únicamente se implementó la libreía de [FontAwsomep para React] (https://fontawesome.com/v5.15/how-to-use/on-the-web/using-with/react). 
--  
+- La Apy Key para acceder a la base de datos de Firestore debe solicitarse por canal privado a fdipietro01@gmail.com   
 
 
 

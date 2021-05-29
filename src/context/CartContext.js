@@ -60,7 +60,7 @@ export const CartItems = ({children})=>{
         if (buyer!==undefined && cart !== undefined){
         const db = getFirestore();
         const orderRegistro = db.collection("order")
-        const orden = {date: getDate(), buyer, cart, total}
+        const orden = {date: getDate(), buyer, cart, total, estado:"generada"}
         orderRegistro.add(orden)
         .then((res)=>{
             setOrderId(res.id)})
