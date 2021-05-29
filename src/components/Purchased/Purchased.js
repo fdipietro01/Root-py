@@ -14,7 +14,7 @@ export const Purchased = ()=>{
         <div className="box">
             <div className ="txtCont">
                 <img className="tickImg" src="https://firebasestorage.googleapis.com/v0/b/roots-stor.appspot.com/o/a1.svg?alt=media&token=3418909a-90cc-4c24-9590-19c0b41bcb4e" alt="done"/>
-                <p className="txt1"> Su orden se ha sido procesada exitosamente !</p>
+                <p className="txt1"> ¡Su orden ha sido procesada exitosamente!</p>
             </div>    
             {loading === true? 
             <div className= "txtCont">
