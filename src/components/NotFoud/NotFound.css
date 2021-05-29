@@ -1,0 +1,19 @@
+.bodynf{
+    display: flex;
+    justify-content: center;
+  
+}
+
+.nfLeyend{
+    
+    background-image: url("https://firebasestorage.googleapis.com/v0/b/roots-stor.appspot.com/o/zzx.png?alt=media&token=3f89ca75-b434-4d43-9c36-0aefc9dc48ab");
+    background-size: contain;
+    height: 80vh;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    width: 100%;
+    color: white;
+    font-size: 35px;
+    font-style: italic;
+    padding-top: 20px;
+}
