@@ -38,6 +38,10 @@ Finalmente, la App devuelve una constancia o identificador de la orden generada 
 - La Apy Key para acceder a la base de datos de Firestore debe solicitarse por canal privado a fdipietro01@gmail.com   
 
 
+### `Un brebe recorrido`
+
+![Gif Roots](https://firebasestorage.googleapis.com/v0/b/roots-stor.appspot.com/o/Roots%20Py.gif?alt=media&token=2e75b122-628b-4ca3-8a1f-f09affd748f1)
+
 
 
 
