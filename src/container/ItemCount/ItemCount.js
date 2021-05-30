@@ -1,13 +1,15 @@
-import React, {useEffect, useState} from "react";
+import React, {useEffect, useState, useContext} from "react";
 import "./ItemCount.css";
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import{faCaretDown, faCaretUp, faShoppingBasket} from '@fortawesome/free-solid-svg-icons';
+import { SeekerContext } from "../../context/SeekerContext";
 
 
 
 export const ItemCount = ({it, helper})=>{
     let [stockOnCounter, setStockOnCounter] = useState(0);
     let [stockTotal, setStockTotal] = useState(it.stock);
+    const {reiniciarBusqueda} = useContext(SeekerContext)
 
     useEffect(()=>{setStockTotal(it.stock)},[it])
 
@@ -35,7 +37,7 @@ export const ItemCount = ({it, helper})=>{
                     <button onClick={sumar} className="but"><FontAwesomeIcon className="ic" icon={faCaretUp}/></button>
                 </div>
                 <p className="stock">{`Stock disponible: ${stockTotal}`}</p>
-                <button className="chart-button" onClick={()=>helper(stockOnCounter)}><FontAwesomeIcon className="basket" icon={faShoppingBasket}/> Agregar al Carrito</button>
+                <button className="chart-button" onClick={()=>{helper(stockOnCounter); reiniciarBusqueda()}}><FontAwesomeIcon className="basket" icon={faShoppingBasket}/> Agregar al Carrito</button>
             </div>
 
         </>

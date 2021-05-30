@@ -3,22 +3,30 @@ import "./ItemDetail.css";
 import { ItemCount } from "../../container/ItemCount/ItemCount";
 import {Link} from "react-router-dom";
 import {CartContext} from "../../context/CartContext";
+import { SeekerContext } from "../../context/SeekerContext";
 
 
 export const ItemDetail = ({ item }) => {
   
 
     const{addItem}=useContext(CartContext);
+    const {reiniciarBusqueda} = useContext(SeekerContext)
 
     const [itemSelection, setItemSelection] = useState();
 
+    const toUpLetter = (word)=> {return word.toLowerCase()
+      .trim()
+      .split(' ')
+      .map( v => v[0].toUpperCase() + v.substr(1) )
+      .join(' ');  }
 
     const onAdd = (itemsPorAgregar)=>{
         if (itemsPorAgregar !== 0){
         setItemSelection(itemsPorAgregar)
         addItem(item, itemsPorAgregar)
       }
-    }    
+    }   
+
 
   return (
     <>
@@ -29,10 +37,10 @@ export const ItemDetail = ({ item }) => {
               <div className="image-box">
                 <img className="itemDetail-img" src={item.url} alt="product" />
               </div>
-              <p className="plantDetail-name">{item.name}</p>
+              <p className="plantDetail-name">{toUpLetter(item.name)}</p>
             </div>
             <div className="itemDetail-info">
-              <p className="plantDetail-kind">Tipo/Especie: {item.kind}</p>
+              <p className="plantDetail-kind">Tipo/Especie: {toUpLetter(item.kind)}</p>
               <p className="plantDetail-price">Precio: ${item.price}</p>
               <p className="plantDetail-id">Id: {item.id}</p>
               <div className="plantDescription">{item.description}</div>
@@ -40,8 +48,8 @@ export const ItemDetail = ({ item }) => {
           </div>
           <div className="contador2">
           {itemSelection === undefined? <ItemCount it={item} helper={onAdd}/> :
-          <><Link to={`/cart`} className="linksItems"> <button className="chart-button">Visitar el carrito</button> </Link>
-          <Link to={"/"}> <button className="chart-button chart-button2">Seguir comprando</button></Link>
+          <><Link to={`/cart`} className="linksItems"> <button className="chart-button" onClick={()=>reiniciarBusqueda()}>Visitar el carrito</button> </Link>
+          <Link to={"/"}> <button className="chart-button chart-button2" onClick={()=>reiniciarBusqueda()}>Seguir comprando</button></Link>
           </> }
           </div>
         </div>

@@ -1,10 +1,12 @@
-import React, {useState, useEffect} from "react";
+import React, {useState, useEffect, useContext} from "react";
 import "./SubMenu.css";
 import {Link} from "react-router-dom";
+import {SeekerContext} from "../../context/SeekerContext"
 
 export const SubMenu = ({classN})=>{
     const [className, setClassName]=useState("desactivate");
     const id= ["plantas","macetas","semillas", "sustratos", "fertilizantes", "otros"];
+    const {reiniciarBusqueda} = useContext(SeekerContext)
     
     useEffect (()=>{
         let classId = "desactivate"
@@ -16,8 +18,8 @@ export const SubMenu = ({classN})=>{
     return(
         <>
             <div className = {`subMenu ${className}`}>
-                <ul className="subMenuList">
-                    <Link to={`/category/${id[0]}`} className="subMenuLink"><li className="subMenuItem">Plantas</li></Link>
+                <ul className="subMenuList"onClick={()=> reiniciarBusqueda()}>
+                    <Link to={`/category/${id[0]}`} className="subMenuLink"><li className="subMenuItem" onClick={()=> reiniciarBusqueda()}>Plantas</li></Link>
                     <Link to={`/category/${id[1]}`} className="subMenuLink"><li className="subMenuItem">Macetas</li></Link>
                     <Link to={`/category/${id[2]}`} className="subMenuLink"><li className="subMenuItem">Semillas</li></Link>
                     <Link to={`/category/${id[3]}`} className="subMenuLink"><li className="subMenuItem">Sustratos</li></Link>

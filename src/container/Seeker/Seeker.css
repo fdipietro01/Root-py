@@ -17,7 +17,7 @@
     padding: 9px; 
     border: 2px solid silver;
     color: white;
-    background-color: rgba(24, 109, 26, 0.904);
+    background-color: rgb(24, 109, 25);
     display: flex;
 }
 
@@ -28,4 +28,9 @@
 
 .seeker:focus{
     outline: none;
+}
+
+.iconSearch:disabled{
+    color: rgba(255, 255, 255, 0.301);
+    background-color: rgba(24, 109, 25, 0.253);
 }

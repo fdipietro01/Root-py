@@ -6,6 +6,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTrash } from "@fortawesome/free-solid-svg-icons";
 import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons";
 import { UserForm } from "../../components/UserForm/UserForm"
+import { SeekerContext } from "../../context/SeekerContext";
 
 export const Cart = () => {
   const { cart } = useContext(CartContext);
@@ -14,6 +15,13 @@ export const Cart = () => {
   const { clearCart } = useContext(CartContext);
   const { total } = useContext(CartContext);
   const { generarOrden } = useContext(CartContext);
+  const {reiniciarBusqueda} = useContext(SeekerContext)
+
+  const toUpLetter = (word)=> {return word.toLowerCase()
+    .trim()
+    .split(' ')
+    .map( v => v[0].toUpperCase() + v.substr(1) )
+    .join(' ');  }
 
   return (
     <div className ="bodyCart">
@@ -26,20 +34,20 @@ export const Cart = () => {
                                 return (
                                   <div key={x.id} className="CartDetailContainer">
                                     <img className="pict" src={x.url} alt="img" />
-                                    <div className="name">{x.name} <p className="idd">Id#{x.id}</p></div>
+                                    <div className="name">{toUpLetter(x.name)} <p className="idd">Id#{x.id}</p></div>
                                     <div className="cantTot"> X{x.quantify} unidades</div>
                                     <div className="Tot">Subotal<span className="TotSpan">${x.quantify * x.price}</span></div>
                                     <div className="botonera">
                                       <button onClick={() => removeIt(x.id)} className="trash"><FontAwesomeIcon className="trashIc" icon={faTrash}/></button>
-                                      <Link className="trashLink" to={`/item/${x.id}`}>
-                                      <button className="trash"><FontAwesomeIcon className="trashIc" icon={faExternalLinkAlt}/></button>
+                                      <Link onClick={()=>reiniciarBusqueda()} className="trashLink" to={`/item/${x.id}`}>
+                                      <button className="trash" onClick={()=>reiniciarBusqueda()}><FontAwesomeIcon className="trashIc" icon={faExternalLinkAlt}/></button>
                                       </Link>
                                       </div>
                                     </div>
                                 );
               })}
               <div className="underCartDetail"> 
-                 <button onClick={()=>clearCart()} className="emptyButton"><FontAwesomeIcon className="" icon={faTrash}/>Vaciar Carrito</button>
+                 <button onClick={()=>{clearCart(); reiniciarBusqueda()}} className="emptyButton"><FontAwesomeIcon className="" icon={faTrash}/>Vaciar Carrito</button>
                 <div>
                     <p className="cartTotal"> Total: <span className="cartTotalValue">${total}</span></p>
                     <p className="aclaracion">*todos los impuestos agregados</p>
@@ -51,7 +59,7 @@ export const Cart = () => {
 
           <div className="bottomBox">
             <div className="endMenu">
-             <Link to={"/"}> <button className="endMenuBut">Volver al catálogo</button> </Link>
+             <Link to={"/"}> <button className="endMenuBut" onClick={()=>reiniciarBusqueda()}>Volver al catálogo</button> </Link>
              <Link to={"/purchased/"}> <button disabled={buyer=== undefined} onClick ={()=>generarOrden()} className="endMenuBut">Terminar compra</button> </Link>
             </div>
           </div>
@@ -62,7 +70,7 @@ export const Cart = () => {
           <div className="emptyCartText">
             <p className="emptyCartText2">¿Todavía no encontraste lo que buscabas?</p>
             <p className="emptyCartText2">¡Encontrá lo mejor de nuestro catálogo acá!</p>
-            <Link to={"./"} ><div><img src="https://firebasestorage.googleapis.com/v0/b/roots-stor.appspot.com/o/root.jpg?alt=media&token=c0466596-fb53-4e60-9780-09342494a520" className="log" alt="logo" /></div></Link>
+            <Link to={"./"} ><div onClick={()=>reiniciarBusqueda()}><img src="https://firebasestorage.googleapis.com/v0/b/roots-stor.appspot.com/o/root.jpg?alt=media&token=c0466596-fb53-4e60-9780-09342494a520" className="log" alt="logo" /></div></Link>
           </div>
         </div>
       }

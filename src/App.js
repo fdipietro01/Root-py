@@ -7,16 +7,22 @@ import { ItemDetailContainer } from "./container/ItemDetailContainer/ItemDetailC
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { Cart } from "./container/CartContainer/Cart";
 import { CartItems } from "./context/CartContext";
+import { SeekerResults} from "./context/SeekerContext"
+import { SearchResultsContainer} from "./container/SearchResults/SearchResultsContainer"
 import { Purchased } from "./components/Purchased/Purchased"
 
 function App() {
   return (
     <div className="App">
       <CartItems value={[]}>
+      <SeekerResults value={[]}>
         <Router>
-          <Header />
+            <Header />
           <NavBar/>
           <Switch>
+            <Route path="/SearchResults/">
+              <SearchResultsContainer />
+            </Route>
             <Route path="/category/:id">
               <ItemListContainer />
             </Route>
@@ -34,6 +40,7 @@ function App() {
             </Route>
           </Switch>
         </Router>
+        </SeekerResults>
       </CartItems>
       <Enlace />  
     </div>

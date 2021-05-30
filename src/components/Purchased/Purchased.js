@@ -2,12 +2,13 @@ import React, {useContext} from "react";
 import { Link } from "react-router-dom";
 import { CartContext } from "../../context/CartContext";
 import "./Purchased.css"
+import { SeekerContext} from "../../context/SeekerContext"
+
 export const Purchased = ()=>{
 
     const { orderId } = useContext(CartContext)
     const { loading } = useContext(CartContext)
-    const { cart } = useContext(CartContext)
-
+    const { reiniciarBusqueda} = useContext(SeekerContext)
     return (
 
     <div className ="bodyCart">
@@ -24,7 +25,7 @@ export const Purchased = ()=>{
             <div className= "txtCont">
             <p className="txt2"> Su número identificador de pedido es: {orderId}</p>
             </div>}
-            <Link to={"/"}><button className="return">Volver al Inicio</button></Link>
+            <Link to={"/"}><button onClick={()=> reiniciarBusqueda()} className="return">Volver al Inicio</button></Link>
         </div>
     </div>
 )
