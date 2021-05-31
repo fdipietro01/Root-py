@@ -48,7 +48,7 @@ export const Seeker = ()=>{
                 onKeyUp={(e)=> e.key === "Enter" && document.getElementById("searchBtn").click()}>
             </input>
             </div>
-        <Link disabled={buscado===""} to={"/SearchResults/"}><button id="searchBtn" onClick={()=>buscar()} className="iconSearch">
+        <Link disabled={buscado===""} to={"/SearchResults/"}><button id="searchBtn" onClick={()=>{buscar(); setResult()}} className="iconSearch">
             <FontAwesomeIcon className="icon" icon={faSearch}></FontAwesomeIcon>
         </button></Link>
         </>

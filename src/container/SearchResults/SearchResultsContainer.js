@@ -16,7 +16,7 @@ export const SearchResultsContainer = ()=>{
             <div className="spinner"></div> 
             <h2 className="loading"> Buscando...</h2> 
           </div>}
-        {result.length > 0 ?
+        {result !== undefined && result.length > 0 ?
         <div className="catalogoCont">
             <div className="body">
                 <div className="productListBox2">
