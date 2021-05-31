@@ -1,0 +1,55 @@
+.resultTittle{
+    font-size: 30px;
+}
+
+.noResults{
+    height: 50vh;
+    font-size: 40px;
+    background-image: url("https://firebasestorage.googleapis.com/v0/b/roots-stor.appspot.com/o/err.jfif?alt=media&token=57dd9648-dfec-4b53-aa3e-07eddba55e2c");
+    width: 45%;
+    font-weight: 700;
+    background-size: cover;
+    display: flex;
+    justify-content: flex-end;
+    padding-left: 25%;
+}
+
+.resulTittle{
+    font-size: 35px;
+    font-style: italic;
+    color: green;
+    -webkit-text-stroke:1px rgba(0, 0, 0, 0.678);
+    font-weight: 700;
+    background-color: white;
+    width: 40%;
+    margin: auto;
+    border: 3px solid green;
+    border-radius: 100px;
+
+}
+
+.productListBox2{
+    display: flex;
+    flex-direction: column;
+    width: 75%; 
+    padding-bottom: 80px;
+    padding-top: 40px;
+    margin-bottom: 100px;
+    background-color: rgba(197, 197, 197, 0.432);
+}
+
+.aux{
+    display: grid;
+    grid-template-columns: 250px 250px 250px 250px;
+    justify-content: center;
+    column-gap: 80px;
+}
+
+.boxi{
+    background-image: url("https://firebasestorage.googleapis.com/v0/b/roots-stor.appspot.com/o/bkg.jpg?alt=media&token=f22a38eb-f745-4663-a4ee-0517b22b6abc");
+    background-repeat: repeat;  
+    padding-top: 40px; 
+    padding-bottom: 200px;
+    display: flex;
+    justify-content: center;
+}

@@ -10,6 +10,7 @@ const reiniciarBusqueda = ()=> {
     const input = document.getElementById("searchInp")
     input.value=""
      setBuscado("")
+     setResult()
  }
 
 return (
