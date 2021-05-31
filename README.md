@@ -8,14 +8,14 @@ Permite navegar entre productos, seleccionar los que sean del gusto del usuario 
 
 ## Funcionalidades
 
-Conexión con el servicio Firebase Database creado para alojar el catálogo que es exhibido en el sitio web.
-Permite la navegación del catálogo, sus distintas categorías y la vista detallada de cada artículo que lo componen.
-Mediante el buscador hace posible encontrar productos filtrndo por palabras contenidas en el nombre, categoría o tipo de producto.
-Habilita al usuario a hacer una selección de artículos de su interés y precisar una cantidad da artículos a comprar.
-Implementa un formulario de datos personales para registro del usuario. Establece mecanismos de validación de los datos requeridos.
-Desde la vista del carrito permite modificar la selección realizada en primera instancia de productos actualizando de manera inmendiata los valores parciales de los artículos y total de la compra.
-Una vez validado los datos de registro, habilita la opción de generar la orden de compro con los artículos seleccionados. Cada orden es remitida a la base de datos de Firebase Databes. 
-Finalmente, la App devuelve una constancia o identificador de la orden generada al usuario. 
+- Conexión con el servicio Firebase Database creado para alojar el catálogo que es exhibido en el sitio web.
+- Permite la navegación del catálogo, sus distintas categorías y la vista detallada de cada artículo que lo componen.
+- Mediante el buscador hace posible encontrar productos filtrndo por palabras contenidas en el nombre, categoría o tipo de producto.
+- Habilita al usuario a hacer una selección de artículos de su interés y precisar una cantidad da artículos a comprar.
+- Implementa un formulario de datos personales para registro del usuario. Establece mecanismos de validación de los datos requeridos.
+- Desde la vista del carrito permite modificar la selección realizada en primera instancia de productos actualizando de manera inmendiata los valores parciales de los     artículos y total de la compra.
+- Una vez validado los datos de registro, habilita la opción de generar la orden de compro con los artículos seleccionados. Cada orden es remitida a la base de datos de Firebase Databes. 
+- Finalmente, la App devuelve una constancia o identificador de la orden generada al usuario. 
 
 ### `Tecnologías Implementadas`
 
