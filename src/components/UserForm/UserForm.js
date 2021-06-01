@@ -107,7 +107,7 @@ export const UserForm = ()=>{
             <div className="formField">
                 <label className="label">Nombre</label>
                 <div className="inputBox">
-                    <input disabled={errorReg===true} className="input" type="text" onChange={(e)=>validarName(e)}></input> 
+                    <input disabled={errorReg===true} className="input" type="text" onBlur={(e)=>validarName(e)}></input> 
                     {(input.name !== undefined && error.name === false) && 
                         <span><FontAwesomeIcon className  ="tick" icon={faCheckCircle}/></span>}
                 </div>   
@@ -120,7 +120,7 @@ export const UserForm = ()=>{
             <div className="formField">
                 <label className="label">Teléfono</label>
                 <div className="inputBox">
-                    <input disabled={errorReg===true} className="input" type="text" onChange={e=>validarPhone(e)}></input> 
+                    <input disabled={errorReg===true} className="input" type="text" onBlur={e=>validarPhone(e)}></input> 
                     {(input.phone !== undefined && error.phone === false) && 
                         <span><FontAwesomeIcon className  ="tick" icon={faCheckCircle}/></span>}
                 </div>   
@@ -133,7 +133,7 @@ export const UserForm = ()=>{
             <div className="formField">
                 <label className="label">Mail</label>
                 <div className="inputBox">
-                    <input disabled={errorReg===true} className="input" type="text" name = "mail1" onChange={e=>validarMail1(e)}></input> 
+                    <input disabled={errorReg===true} className="input" type="text" name = "mail1" onBlur={e=>validarMail1(e)}></input> 
                     {(input.mail1 !== undefined && error.mail1 === false) && 
                         <span><FontAwesomeIcon className  ="tick" icon={faCheckCircle}/></span>}
                 </div>   
@@ -145,7 +145,7 @@ export const UserForm = ()=>{
             <div className="formField">
                 <label className="label label2" >Reingrese <p>el mail</p></label>
                 <div className="inputBox">
-                    <input disabled={errorReg===true} className="input" type="text" name = "mail2"onChange={e=>validarMail2(e)}></input>
+                    <input disabled={errorReg===true} className="input" type="text" name = "mail2"onBlur={e=>validarMail2(e)}></input>
                    {(input.mail2 !== undefined && error.mail2 === false) && 
                         <span><FontAwesomeIcon className  ="tick" icon={faCheckCircle}/></span>}
                 </div>   
@@ -158,7 +158,7 @@ export const UserForm = ()=>{
             <div className="formField">
                 <label className="label label2">Contraseña</label>
                 <div className="inputBox">
-                    <input disabled={errorReg===true} className="input" type="password" onChange={e=>validarPass(e)}></input> 
+                    <input disabled={errorReg===true} className="input" type="password" onBlur={e=>validarPass(e)}></input> 
                     {(input.pass !== undefined && error.pass === false) && 
                         <span><FontAwesomeIcon className  ="tick" icon={faCheckCircle}/></span>}
                 </div>   
