@@ -1,18 +1,13 @@
-import React, {useState, useEffect, useContext} from "react";
+import React, {useContext} from "react";
 import "./SubMenu.css";
 import {Link} from "react-router-dom";
 import {SeekerContext} from "../../context/SeekerContext"
 
-export const SubMenu = ({classN})=>{
-    const [className, setClassName]=useState("desactivate");
+export const SubMenu = ({className})=>{
+    
     const id= ["plantas","macetas","semillas", "sustratos", "fertilizantes", "otros"];
     const {reiniciarBusqueda} = useContext(SeekerContext)
     
-    useEffect (()=>{
-        let classId = "desactivate"
-    if (classN === true){classId="activate"} else {classId = "desactivate"};
-    setClassName(classId);
-    },[classN]); 
           
 
     return(

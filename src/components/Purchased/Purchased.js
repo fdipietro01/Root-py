@@ -10,6 +10,7 @@ export const Purchased = ()=>{
     const { orderId } = useContext(CartContext)
     const { loading } = useContext(CartContext)
     const { reiniciarBusqueda} = useContext(SeekerContext)
+    
     return (
 
     <div className ="bodyCart">

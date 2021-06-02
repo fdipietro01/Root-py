@@ -11,6 +11,7 @@ import { SeekerResults} from "./context/SeekerContext"
 import { SearchResultsContainer} from "./container/SearchResultsContainer/SearchResultsContainer"
 import { Purchased } from "./components/Purchased/Purchased"
 
+
 function App() {
   return (
     <div className="App">

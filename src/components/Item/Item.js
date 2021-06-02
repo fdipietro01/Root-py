@@ -6,13 +6,7 @@ import { SeekerContext } from "../../context/SeekerContext";
 
 export const Item = ({id, url, name, kind, price,stock})=>{
 
-    const {reiniciarBusqueda} = useContext(SeekerContext)
-
-    const toUpLetter = (word)=> {return word.toLowerCase()
-        .trim()
-        .split(' ')
-        .map( v => v[0].toUpperCase() + v.substr(1) )
-        .join(' ');  }
+    const {reiniciarBusqueda, toUpLetter} = useContext(SeekerContext)
         
     return(
         <>

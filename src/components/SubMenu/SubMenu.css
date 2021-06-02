@@ -5,6 +5,7 @@
 .activate{
     position: absolute;
     top:55px;
+    z-index: 1000;
 }
 
 .desactivate{

@@ -1,32 +1,15 @@
-import React, {useContext, useState} from "react";
+import React, {useContext} from "react";
 import "./ItemDetail.css";
 import { ItemCount } from "../../container/ItemCount/ItemCount";
 import {Link} from "react-router-dom";
-import {CartContext} from "../../context/CartContext";
 import { SeekerContext } from "../../context/SeekerContext";
 
 
-export const ItemDetail = ({ item }) => {
+
+export const ItemDetail = ({ item, onAdd, itemSelection }) => {
   
-
-    const{addItem}=useContext(CartContext);
-    const {reiniciarBusqueda} = useContext(SeekerContext)
-
-    const [itemSelection, setItemSelection] = useState();
-
-    const toUpLetter = (word)=> {return word.toLowerCase()
-      .trim()
-      .split(' ')
-      .map( v => v[0].toUpperCase() + v.substr(1) )
-      .join(' ');  }
-
-    const onAdd = (itemsPorAgregar)=>{
-        if (itemsPorAgregar !== 0){
-        setItemSelection(itemsPorAgregar)
-        addItem(item, itemsPorAgregar)
-      }
-    }   
-
+    const {reiniciarBusqueda, toUpLetter} = useContext(SeekerContext)
+      
 
   return (
     <>
