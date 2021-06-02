@@ -4,6 +4,7 @@ import { CartContext } from "../../context/CartContext";
 import "./Purchased.css"
 import { SeekerContext} from "../../context/SeekerContext"
 
+
 export const Purchased = ()=>{
 
     const { orderId } = useContext(CartContext)

@@ -2,20 +2,19 @@ import React,{useContext} from "react"
 import "./SearchResultsContainer.css"
 import {SeekerContext} from "../../context/SeekerContext"
 import {Item} from "../../components/Item/Item"
+import {Loader} from "../../components/Loader/Loader"
 
 export const SearchResultsContainer = ()=>{
     const {result} = useContext(SeekerContext)
     const {buscado} = useContext(SeekerContext)
+    
 
 
     return(
     <>
         {console.log(result)}
         {result === undefined && 
-        <div className="loader"> 
-            <div className="spinner"></div> 
-            <h2 className="loading"> Buscando...</h2> 
-          </div>}
+        <Loader mensaje ={"Buscando"}/>}
         {result !== undefined && result.length > 0 ?
         <div className="catalogoCont">
             <div className="body">

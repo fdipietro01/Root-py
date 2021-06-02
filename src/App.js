@@ -8,7 +8,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { Cart } from "./container/CartContainer/Cart";
 import { CartItems } from "./context/CartContext";
 import { SeekerResults} from "./context/SeekerContext"
-import { SearchResultsContainer} from "./container/SearchResults/SearchResultsContainer"
+import { SearchResultsContainer} from "./container/SearchResultsContainer/SearchResultsContainer"
 import { Purchased } from "./components/Purchased/Purchased"
 
 function App() {

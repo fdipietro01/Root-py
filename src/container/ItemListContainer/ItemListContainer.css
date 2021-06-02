@@ -15,12 +15,3 @@
     background-repeat: repeat;  
     padding-top: 40px; 
 }
-.loader{
-    display: flex;
-    width: 50%;
-    margin: auto;
-}
-
-.loading{
-    color: white
-}

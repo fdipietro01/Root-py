@@ -4,6 +4,7 @@ import { ItemDetail } from "../../components/ItemDetail/ItemDetail";
 import {useParams} from "react-router-dom";
 import {getFirestore} from "../../firebase"
 import {NotFound} from "../../components/NotFoud/NotFound"
+import {Loader} from "../../components/Loader/Loader"
 
 
 export const ItemDetailContainer = ()=>{
@@ -29,10 +30,7 @@ export const ItemDetailContainer = ()=>{
         <>
         {existe ===false? <NotFound/>:
         itemD.id !== undefined? <ItemDetail item = {itemD}/> : 
-        <div className="loader"> 
-             <div className="spinner"></div> 
-             <h2 className="loading">Cargando...</h2> 
-          </div>
+        <Loader mensaje={"Cargando"}/>
         }   
         </>
     )

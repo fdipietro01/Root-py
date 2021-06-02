@@ -3,6 +3,7 @@ import "./ItemListContainer.css";
 import { ItemList } from "../../components/ItemList/ItemList";
 import {useParams} from "react-router-dom";
 import {getFirestore} from "../../firebase"
+import {Loader} from "../../components/Loader/Loader"
 
 export const ItemListContainer = () => {
   const [arrayIt, setArrayIt] = useState([]);
@@ -42,10 +43,7 @@ export const ItemListContainer = () => {
     <>
       {id !== undefined? 
           (arrayFilt.length > 0?  <ItemList props = {arrayFilt}/>: 
-          <div className="loader"> 
-            <div className="spinner"></div> 
-            <h2 className="loading"> Cargando...</h2> 
-          </div>) : 
+          <Loader mensaje={"Cargando"}/>) : 
           (arrayIt.length > 0?  <ItemList props = {arrayIt} /> :
            <div className="loader"> 
              <div className="spinner"></div> 
