@@ -25,14 +25,14 @@ It allows browsing through a list of products, selecting those that user like an
 
 ### `Usage`
 
-- Clonar el repositorio.
-- Asegurarse de tener instalado Node Js versión v14.16.0 o superior. 
-- Desde el directorio interno a Root-py donde se encuentra el archivo package.json abrir la consola y ejecutar los siguientes comandos:
+- Clone the repository.
+- Make sure you have installed Node Js version v14.16.0 or higher.
+- From the directory internal to Root-py where the package.json file is located, open the console and execute the following commands:
 
     - npm install
-    (instala todos los módulos/dependencias utilizadas en el proyecto - el proceso puede demorar unos minutos)
+    (installs all modules / dependencies used in the project - the process may take a few minutes)
     - npm start
-    (abrirá automáticamente el proyecto en el puerto    [http://localhost:3000](http://localhost:3000))
+    (it will automatically open the project on the port [http: // localhost: 3000] (http: // localhost: 3000))
 
 ### `A brief comment`
 - The project did not have the participation of UI / UX, so that all the styles and animations implemented were an own desition. They were developed with native Css. Only the [FontAwsomep for React] library was implemented (https://fontawesome.com/v5.15/how-to-use/on-the-web/using-with/react).
