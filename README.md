@@ -36,7 +36,6 @@ It allows browsing through a list of products, selecting those that user like an
 
 ### `A brief comment`
 - The project did not have the participation of UI / UX, so that all the styles and animations implemented were an own desition. They were developed with native Css. Only the [FontAwsomep for React] library was implemented (https://fontawesome.com/v5.15/how-to-use/on-the-web/using-with/react).
-- The Apy Key to access the Firestore database must be requested through a private channel at fdipietro01@gmail.com
 
 
 ### `Take a look`
