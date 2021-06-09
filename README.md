@@ -1,29 +1,29 @@
 # ROOTS /E-Commerse Proyect/
 
-Plataforma diseñada para la venta de artículos del rubro botánico.
+Platform designed for the sale of botanical items.
 
-## Descripción
+## Description
 
-Permite navegar entre productos, seleccionar los que sean del gusto del usuario y generar una orden de compre mediante un registro previo de los datos del comprador. 
+It allows browsing through a list of products, selecting those that user like and generating a purchase order by prior registration of the buyer's data.
 
-## Funcionalidades
+## Features
 
-- Conexión con el servicio Firebase Database creado para alojar el catálogo que es exhibido en el sitio web.
-- Permite la navegación del catálogo, sus distintas categorías y la vista detallada de cada artículo que lo componen.
-- Mediante el buscador hace posible encontrar productos filtrndo por palabras contenidas en el nombre, categoría o tipo de producto.
-- Habilita al usuario a hacer una selección de artículos de su interés y precisar una cantidad da artículos a comprar.
-- Implementa un formulario de datos personales para registro del usuario. Establece mecanismos de validación de los datos requeridos.
-- Desde la vista del carrito permite modificar la selección realizada en primera instancia de productos actualizando de manera inmendiata los valores parciales de los     artículos y total de la compra.
-- Una vez validado los datos de registro, habilita la opción de generar la orden de compro con los artículos seleccionados. Cada orden es remitida a la base de datos de Firebase Databes. 
-- Finalmente, la App devuelve una constancia o identificador de la orden generada al usuario. 
+- Connection with the Firebase Database service created to host the catalog that is displayed on the website.
+- Allows navigation of the catalog, its different categories and a detailed view of each article that compose it.
+- Through the search engine it is possible to find products by filtering by words contained in the name, category or type of product.
+- Enables the user to make a selection of items of interest and specify a number of items to buy.
+- Implements a personal data form for user registration. Establishes validation mechanisms for the required data.
+- From the cart view, it allows modifying the selection made in the first instance of products, immediately updating the partial values ​​of the items and the total of the purchase.
+- Once the registration data has been validated, it enables the option to generate the voucher order with the selected items. Each order is forwarded to the Firebase Databes database.
+- Finally, the App returns a certificate or identifier of the generated order to the user.
 
-### `Tecnologías Implementadas`
+### `Techs`
 
  - React Js
  - FireBase Database/ Storage
  - Node Js
 
-### `Punto de partida para ejecutar la App`
+### `Usage`
 
 - Clonar el repositorio.
 - Asegurarse de tener instalado Node Js versión v14.16.0 o superior. 
@@ -34,12 +34,12 @@ Permite navegar entre productos, seleccionar los que sean del gusto del usuario 
     - npm start
     (abrirá automáticamente el proyecto en el puerto    [http://localhost:3000](http://localhost:3000))
 
-### `Algunos Comentarios`
-- El proyecto no contó con la participación de UI/UX, de manera que todos los estilos y animaciones implementadas fueron una elección propia y desarrolladas con Css nativo, sin el uso preprocesadores de estilos. Únicamente se implementó la libreía de [FontAwsomep para React] (https://fontawesome.com/v5.15/how-to-use/on-the-web/using-with/react). 
-- La Apy Key para acceder a la base de datos de Firestore debe solicitarse por canal privado a fdipietro01@gmail.com   
+### `A brief comment`
+- The project did not have the participation of UI / UX, so that all the styles and animations implemented were an own desition. They were developed with native Css. Only the [FontAwsomep for React] library was implemented (https://fontawesome.com/v5.15/how-to-use/on-the-web/using-with/react).
+- The Apy Key to access the Firestore database must be requested through a private channel at fdipietro01@gmail.com
 
 
-### `Un brebe recorrido`
+### `Take a look`
 
 ![](RootPreview.gif)
              
