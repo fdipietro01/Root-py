@@ -3,7 +3,7 @@ import "firebase/firestore"
 
 
 const app = firebase.initializeApp({
-    apiKey: AIzaSyBWc7iWGfOV2yQus6f_Nt6MtVq04vQetGg,
+    apiKey: "AIzaSyBWc7iWGfOV2yQus6f_Nt6MtVq04vQetGg",
     authDomain: "roots-stor.firebaseapp.com",
     projectId: "roots-stor",
     storageBucket: "roots-stor.appspot.com",

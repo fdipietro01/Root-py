@@ -1,8 +1,8 @@
 .bodyCart{
     background-image: url("https://firebasestorage.googleapis.com/v0/b/roots-stor.appspot.com/o/bkg.jpg?alt=media&token=f22a38eb-f745-4663-a4ee-0517b22b6abc");
     background-repeat: repeat;
-    height: 100vh;
-    padding: 20px 270px;
+    height: 120vh;
+    padding: 20px 200px;
 }
 
 .mainly{
@@ -25,6 +25,7 @@
     border: 2px solid green;   
     justify-content: space-between;
     margin-bottom: 10px;
+
 }
 
 .pict{
@@ -171,6 +172,7 @@ margin-top:20px;
 .underCartDetail{
     display: flex;
     justify-content: space-between;
+
 }
 
 .emptyButton{
